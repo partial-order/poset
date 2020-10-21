@@ -19,8 +19,9 @@
   ],
   "scripts": {
     "build": "./node_modules/.bin/aureooms-node-package-build",
-    "test": "./node_modules/.bin/aureooms-node-package-test",
-    "esdoc": "esdoc"
+    "test": "ava",
+    "esdoc": "esdoc",
+    "lint": "true"
   },
   "author": "aureooms",
   "devDependencies": {
@@ -39,7 +40,7 @@
     "@babel/core": "7.12.3",
     "@babel/preset-env": "7.12.1",
     "@babel/register": "7.12.1",
-    "ava": "3.12.1",
+    "ava": "3.13.0",
     "babel-plugin-transform-remove-console": "6.9.4",
     "babel-plugin-unassert": "3.0.1",
     "babel-preset-power-assert": "3.0.0",
