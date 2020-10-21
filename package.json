@@ -24,7 +24,8 @@
     "lint": "true",
     "prepare": "npm run build",
     "cover": "nyc --reporter=lcov npm test",
-    "dev": "npm run lint -- --fix && npm run cover -- -- -st --fail-fast"
+    "dev": "npm run lint -- --fix && npm run cover -- -- -st --fail-fast",
+    "travis": "npm run lint && npm run cover"
   },
   "author": "aureooms",
   "devDependencies": {
