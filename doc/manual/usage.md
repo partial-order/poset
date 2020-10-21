@@ -12,7 +12,7 @@ import 'regenerator-runtime/runtime.js' ;
 
 Then, import the library where needed
 ```js
-const algorithms = require( '@aureooms/js-poset' ) ;
+const poset = require( '@aureooms/js-poset' ) ;
 // or
-import * as algorithms from '@aureooms/js-poset' ;
+import * as poset from '@aureooms/js-poset' ;
 ```
