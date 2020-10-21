@@ -1,4 +1,3 @@
-
 /**
  * Output sensitive inplace algorithm to find the minima set of a set S of
  * elements according to some partial order.
@@ -23,8 +22,7 @@
  * -------------------- Kenneth L. Clarkson -
  */
 
-export function clarkson ( prec , a , i , j ) {
-
+export function clarkson(prec, a, i, j) {
 	//
 	// This algorithms reorganizes the input array `a` as follows
 	//  - elements that are minima are put at the front of `a`
@@ -37,66 +35,67 @@ export function clarkson ( prec , a , i , j ) {
 	//  ------------------------------------------------------
 	//  i           min                dis                     j
 
-	var min , dis , k , inc , tmp ;
+	let min;
+	let dis;
+	let k;
+	let inc;
+	let temporary;
 
-	min = i ;
-	dis = j - 1 ;
+	min = i;
+	dis = j - 1;
 
 	// While there are candidate elements left.
 
-	while ( min <= dis ) {
-
+	while (min <= dis) {
 		// (1) Determine if the right-most candidate should be discarded because it
 		// is dominated by one of the minima elements of the minima set in
 		// construction.
 
-		for ( k = i ; k < min && !prec( a[k] , a[dis] ) ; ++k ) ;
+		for (k = i; k < min && !prec(a[k], a[dis]); ++k);
 
 		// If so, discard it.
 
-		if ( k < min ) --dis ;
+		if (k < min) {
+			--dis;
+		}
 
 		// (2) Otherwise, scan the candidates for a minimum. If at this point the
 		// candidate set is not empty, at least one of its elements must be a
 		// minimum. We scan the candidate list to find such a minimum.
-
 		else {
-
 			// Store the current minimum as the left-most candidate.
 
-			tmp    = a[dis] ;
-			a[dis] = a[min] ;
-			a[min] = tmp ;
+			temporary = a[dis];
+			a[dis] = a[min];
+			a[min] = temporary;
 
 			// For each other candidate, right-to-left.
 
-			for ( inc = min + 1 ; inc <= dis ; ) {
-
+			for (inc = min + 1; inc <= dis; ) {
 				// If the current minimum precedes the right-most candidate,
 				// discard the right-most candidate.
 
-				if ( prec( a[min] , a[dis] ) ) --dis ;
+				if (prec(a[min], a[dis])) {
+					--dis;
+				}
 
 				// Else, if the right-most candidate precedes the current
 				// minimum, we can discard the current minimum and the
 				// right-most candidate becomes the current minimum.
-
-				else if ( prec( a[dis] , a[min] ) ) {
-					tmp    = a[dis] ;
-					a[dis] = a[min] ;
-					a[min] = tmp ;
-					--dis ;
+				else if (prec(a[dis], a[min])) {
+					temporary = a[dis];
+					a[dis] = a[min];
+					a[min] = temporary;
+					--dis;
 				}
 
 				// Otherwise, we save the candidate for the next round.
-
 				else {
-					tmp    = a[dis] ;
-					a[dis] = a[inc] ;
-					a[inc] = tmp ;
-					++inc ;
+					temporary = a[dis];
+					a[dis] = a[inc];
+					a[inc] = temporary;
+					++inc;
 				}
-
 			}
 
 			// The above loop selects a new minimum from the set of candidates
@@ -104,15 +103,11 @@ export function clarkson ( prec , a , i , j ) {
 			// counter to move this minimum from the candidate list to the
 			// minima set.
 
-			++min ;
-
+			++min;
 		}
-
 	}
 
 	// The algorithm returns the outer right bound of the minima set a[i:min].
 
-	return min ;
-
+	return min;
 }
-

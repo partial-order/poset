@@ -1,1 +1,1 @@
-export * from './clarkson' ;
+export * from './clarkson';
