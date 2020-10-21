@@ -80,6 +80,7 @@
     "@aureooms/js-array": "^4.0.0",
     "@aureooms/js-compare": "^1.4.8",
     "@aureooms/js-functools": "^2.0.3",
+    "@aureooms/js-insertion-sort": "^0.0.1",
     "@aureooms/js-itertools": "^4.1.0",
     "@aureooms/js-operator": "^1.0.2",
     "@aureooms/js-partition": "^8.0.0",

@@ -29,6 +29,11 @@
   resolved "https://registry.yarnpkg.com/@aureooms/js-functools/-/js-functools-2.0.3.tgz#5139d6245278193da4cf21c44666797bf40a1d6e"
   integrity sha1-UTnWJFJ4GT2kzyHERmZ5e/QKHW4=
 
+"@aureooms/js-insertion-sort@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@aureooms/js-insertion-sort/-/js-insertion-sort-0.0.1.tgz#136b7bec0e21d3e56315abf2fa3c368b8af5e787"
+  integrity sha512-qcmT2wIIXGlUpHS2UF7xuccFI7gngUDsQnO5+Y0nIehjD92JKw+QpPqbAUdTZCPOUmvhAYMEu5jh6oqvs2miIQ==
+
 "@aureooms/js-itertools@^4.1.0":
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/@aureooms/js-itertools/-/js-itertools-4.1.0.tgz#c731eaee7de0005c6ea41f2f87cca4bdb2d86ca1"
