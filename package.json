@@ -138,5 +138,6 @@
   },
   "files": [
     "lib"
-  ]
+  ],
+  "sideEffects": false
 }
