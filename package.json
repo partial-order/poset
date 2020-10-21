@@ -1,5 +1,5 @@
 {
-  "name": "@aureooms/js-algorithms",
+  "name": "@aureooms/js-poset",
   "description": "Playground for algorithms in JavaScript",
   "version": "3.0.7",
   "author": "aureooms",
@@ -73,7 +73,7 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/aureooms/js-algorithms/issues"
+    "url": "https://github.com/aureooms/js-poset/issues"
   },
   "dependencies": {},
   "devDependencies": {
@@ -110,7 +110,7 @@
   "files": [
     "lib"
   ],
-  "homepage": "https://aureooms.github.io/js-algorithms",
+  "homepage": "https://aureooms.github.io/js-poset",
   "keywords": [
     "adt",
     "algorithm",
@@ -123,7 +123,7 @@
   "license": "AGPL-3.0",
   "main": "lib/index.js",
   "repository": {
-    "url": "https://github.com/aureooms/js-algorithms.git",
+    "url": "https://github.com/aureooms/js-poset.git",
     "type": "git"
   },
   "scripts": {

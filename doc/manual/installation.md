@@ -8,15 +8,15 @@ or [jspm](https://jspm.org/docs).
 
 ### yarn
 ```terminal
-yarn add @aureooms/js-algorithms
+yarn add @aureooms/js-poset
 ```
 
 ### npm
 ```terminal
-npm install @aureooms/js-algorithms --save
+npm install @aureooms/js-poset --save
 ```
 
 ### jspm
 ```terminal
-jspm install npm:@aureooms/js-algorithms
+jspm install npm:@aureooms/js-poset
 ```

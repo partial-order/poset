@@ -13,7 +13,7 @@
           "autoPrivate": true
         },
         "brand": {
-          "title": "@aureooms/js-algorithms"
+          "title": "@aureooms/js-poset"
         },
         "test": {
           "type": "ava",
