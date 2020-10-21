@@ -1,124 +1,37 @@
-[@aureooms/js-algorithms](https://aureooms.github.io/js-algorithms)
+:spider_web: [@aureooms/js-poset](https://aureooms.github.io/js-poset)
 ==
 
-<img src="https://cdn.rawgit.com/aureooms/js-algorithms/master/media/sketch.png" width="864">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Birkhoff120.svg" width="864">
 
-Playground for algorithms in JavaScript.
-This is a child project of [@aureooms/js-library](https://github.com/aureooms/js-library)
-and
-the twin project of [@aureooms/js-data-structures](https://github.com/aureooms/js-data-structures).
+Partially ordered sets algorithms for JavaScript.
+See [docs](https://aureooms.github.io/js-poset).
+Parent is [@aureooms/js-algorithms](https://github.com/aureooms/js-algorithms).
 
-[![License](https://img.shields.io/github/license/aureooms/js-algorithms.svg)](https://raw.githubusercontent.com/aureooms/js-algorithms/main/LICENSE)
-[![Version](https://img.shields.io/npm/v/@aureooms/js-algorithms.svg)](https://www.npmjs.org/package/@aureooms/js-algorithms)
-[![Build](https://img.shields.io/travis/aureooms/js-algorithms/main.svg)](https://travis-ci.org/aureooms/js-algorithms/branches)
-[![Dependencies](https://img.shields.io/david/aureooms/js-algorithms.svg)](https://david-dm.org/aureooms/js-algorithms)
-[![Dev dependencies](https://img.shields.io/david/dev/aureooms/js-algorithms.svg)](https://david-dm.org/aureooms/js-algorithms?type=dev)
-[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-algorithms.svg)](https://github.com/aureooms/js-algorithms/issues)
-[![Downloads](https://img.shields.io/npm/dm/@aureooms/js-algorithms.svg)](https://www.npmjs.org/package/@aureooms/js-algorithms)
+```js
+import {clarkson} from '@aureooms/js-poset';
+import {increasing} from '@aureooms/js-compare';
 
-[![Code issues](https://img.shields.io/codeclimate/issues/aureooms/js-algorithms.svg)](https://codeclimate.com/github/aureooms/js-algorithms/issues)
-[![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-algorithms.svg)](https://codeclimate.com/github/aureooms/js-algorithms/trends/churn)
-[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-algorithms/main.svg)](https://codecov.io/gh/aureooms/js-algorithms)
-[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-algorithms.svg)](https://codeclimate.com/github/aureooms/js-algorithms/trends/technical_debt)
-[![Documentation](https://aureooms.github.io/js-algorithms/badge.svg)](https://aureooms.github.io/js-algorithms/source.html)
-[![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-algorithms)](https://bundlephobia.com/result?p=@aureooms/js-algorithms)
+const a = [4, 12, 2, 6, 3];
 
-## Description
+const divides = (a, b) => b % a === 0;
+const n = clarkson(divides, a, 0, a.length); // 2
+a.slice(0, n).sort(increasing); // 2 3
 
-This project is just a playground for any algorithm that doesn't fit in any
-of those projects,
+const norel = (_a, _b) => false;
+clarkson(norel, a, 0, a.length); // a.length
+```
 
-### Sorting
+[![License](https://img.shields.io/github/license/aureooms/js-poset.svg)](https://raw.githubusercontent.com/aureooms/js-poset/main/LICENSE)
+[![Version](https://img.shields.io/npm/v/@aureooms/js-poset.svg)](https://www.npmjs.org/package/@aureooms/js-poset)
+[![Build](https://img.shields.io/travis/aureooms/js-poset/main.svg)](https://travis-ci.org/aureooms/js-poset/branches)
+[![Dependencies](https://img.shields.io/david/aureooms/js-poset.svg)](https://david-dm.org/aureooms/js-poset)
+[![Dev dependencies](https://img.shields.io/david/dev/aureooms/js-poset.svg)](https://david-dm.org/aureooms/js-poset?type=dev)
+[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-poset.svg)](https://github.com/aureooms/js-poset/issues)
+[![Downloads](https://img.shields.io/npm/dm/@aureooms/js-poset.svg)](https://www.npmjs.org/package/@aureooms/js-poset)
 
-  - [@aureooms/js-sort](https://github.com/aureooms/js-sort) : sorting code bricks for JavaScript
-    - [@aureooms/js-in-situ-sort-spec](https://github.com/aureooms/js-in-situ-sort-spec): in place sorting code bricks for JavaScript
-      - [@aureooms/js-heapsort](https://github.com/aureooms/js-heapsort): heapsort code bricks for JavaScript
-      - [@aureooms/js-quicksort](https://github.com/aureooms/js-quicksort): quicksort code bricks for JavaScript
-    - [@aureooms/js-mergesort](https://github.com/aureooms/js-mergesort): mergesort code bricks for JavaScript
-    - [@aureooms/js-merging](https://github.com/aureooms/js-merging): merging code bricks for JavaScript
-    - [@aureooms/js-partition](https://github.com/aureooms/js-partition): partition code bricks for JavaScript
-    - [@aureooms/js-selection](https://github.com/aureooms/js-selection): selection code bricks for JavaScript
-    
-### Searching
-  - [@aureooms/js-search](https://github.com/aureooms/js-search) : item retrieval code bricks for JavaScript
-  - [@aureooms/js-splitting](https://github.com/aureooms/js-splitting): splitting code bricks for JavaScript
-  
-### Strings
-  - [@aureooms/js-string](https://github.com/aureooms/js-string) : character sequence code bricks for JavaScript
-  - [@aureooms/js-nlp](https://github.com/aureooms/js-nlp) : natural language processing code bricks for JavaScript
- 
-### Computational geometry
-  - [@aureooms/js-cg](https://github.com/aureooms/js-cg) : computational geometry code bricks for JavaScript
- 
-### Graph theory
-  - [@aureooms/js-gn](https://github.com/aureooms/js-gn) : graphs and networks code bricks for JavaScript
-
-### Numbers
-  
-  - [@aureooms/js-integer](https://github.com/aureooms/js-integer) : multi-precision arithmetic code bricks for JavaScript
-  - [@aureooms/js-rational](https://github.com/aureooms/js-rational) : rational numbers code bricks for JavaScript
-  - [@aureooms/js-complex](https://github.com/aureooms/js-complex) : complex numbers code bricks for JavaScript
-  - [@aureooms/js-polynomial](https://github.com/aureooms/js-polynomial) : sparse and dense polynomials code bricks for JavaScript
-
-#### Number theory
-  - [@aureooms/js-fft](https://github.com/aureooms/js-fft) : Fast Fourier transform algorithms for JavaScript
-  - [@aureooms/js-prime](https://github.com/aureooms/js-prime) : Prime numbers for JavaScript
-  
-#### Integer sequences
-  - [@aureooms/js-integer-sequences](https://github.com/aureooms/js-integer-sequences) : Integer sequences for JavaScript
-  - [@aureooms/js-fibonacci](https://github.com/aureooms/js-fibonacci) : Fibonacci numbers for JavaScript
-  
-#### Matrices
-  - [@aureooms/js-matrix](https://github.com/aureooms/js-matrix) : matrices code bricks for JavaScript
-  - [@aureooms/js-hypermatrix](https://github.com/aureooms/js-hypermatrix) : hypermatrices code bricks for JavaScript
-  
-### Hashing
-  - [@aureooms/js-hash](https://github.com/aureooms/js-hash) : hashing algorithms code bricks for JavaScript
-  
-### Pseudo-random generators
-  - [@aureooms/js-random](https://github.com/aureooms/js-random) : randomness code bricks for JavaScript
-  
-### Hard problems
-  - [@aureooms/js-sat](https://github.com/aureooms/js-sat) : Boolean formula satisfiability algorithms for Javascript
-  - [@aureooms/js-ho](https://github.com/aureooms/js-ho) : heuristic optimization code bricks for JavaScript
-  - [@aureooms/js-oro](https://github.com/aureooms/js-oro) : operations research and optimization algorithm templates for JavaScript
-  - [@aureooms/js-pfsp-wt](https://github.com/aureooms/js-pfsp-wt) : permutation flow-shop problem (PFSP) with weighted tardiness objective (PFSP-WT) code bricks for JavaScript
-
-### Miscellaneous
-  - [@aureooms/js-equation](https://github.com/aureooms/js-equation) : equations system code bricks for JavaScript
-  - [@aureooms/js-permutation](https://github.com/aureooms/js-permutation) : permutations code bricks for JavaScript
-
-
-Those packages aim to provide *code bricks* that are as generic as possible.
-Some examples are a Gauss-Jordan method that can work with any number model, a
-Karatsuba algorithm that can handle any block size, a Graham Scan algorithm
-that works with clockwise or counter clockwise ordering, and a Monotone Chain
-algorithm that can be used as a triangulation algorithm without any change.
-
-## Reference
-
-A list of links and projects focusing on algorithm implementation.
-
-### Projects implementing algorithms in JavaScript
-
-  - https://github.com/felipernb/algorithms.js
-  - https://github.com/mgechev/javascript-algorithms
-  - https://github.com/nzakas/computer-science-in-javascript
-  - https://github.com/benoitvallon/computer-science-in-javascript
-  - http://www.nayuki.io
-
-### Projects implementing algorithms in other languages
-
-  - https://github.com/xtaci/algorithms (C++)
-  - https://github.com/fragglet/c-algorithms (C)
-  - https://github.com/nryoung/algorithms (Python)
-  - https://github.com/kanwei/algorithms (Ruby)
-  - https://github.com/phishman3579/java-algorithms-implementation (Java)
-  - https://github.com/patmorin/ods (C++, Java, Python)
-  - http://www.nayuki.io (C, C++, Java, C#, Python, Haskell, MATLAB and others)
-  - http://rosettacode.org (All kinds of languages)
-
-### Others
-
-  - http://stackoverflow.com/questions/26301/your-favourite-algorithm-and-the-lesson-it-taught-you
-  - http://cglab.ca/publications.html
+[![Code issues](https://img.shields.io/codeclimate/issues/aureooms/js-poset.svg)](https://codeclimate.com/github/aureooms/js-poset/issues)
+[![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-poset.svg)](https://codeclimate.com/github/aureooms/js-poset/trends/churn)
+[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-poset/main.svg)](https://codecov.io/gh/aureooms/js-poset)
+[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-poset.svg)](https://codeclimate.com/github/aureooms/js-poset/trends/technical_debt)
+[![Documentation](https://aureooms.github.io/js-poset/badge.svg)](https://aureooms.github.io/js-poset/source.html)
+[![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-poset)](https://bundlephobia.com/result?p=@aureooms/js-poset)
