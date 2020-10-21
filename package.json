@@ -40,7 +40,6 @@
     "@aureooms/js-selection": "^9.0.0",
     "@aureooms/js-sort": "^7.0.0",
     "@aureooms/js-splitting": "^4.0.2",
-    "aureooms-node-package": "^6.0.1",
     "@babel/cli": "7.12.1",
     "@babel/core": "7.12.3",
     "@babel/preset-env": "7.12.1",
