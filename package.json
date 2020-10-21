@@ -1,6 +1,6 @@
 {
   "name": "@aureooms/js-poset",
-  "description": "Playground for algorithms in JavaScript",
+  "description": "Partially ordered sets algorithms for JavaScript.",
   "version": "3.0.7",
   "author": "aureooms",
   "ava": {
