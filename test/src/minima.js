@@ -1,10 +1,12 @@
+import test from 'ava';
+import * as poset from '../../src';
 
-var sort = require( "@aureooms/js-sort" ) ;
-var array = require( "@aureooms/js-array" ) ;
-var random = require( "@aureooms/js-random" ) ;
-var compare = require( "@aureooms/js-compare" ) ;
+import sort from "@aureooms/js-sort" ;
+import array from "@aureooms/js-array" ;
+import random from "@aureooms/js-random" ;
+import compare from "@aureooms/js-compare" ;
 
-test( "minima 1" , function ( ) {
+test( "minima 1" , t => {
 
 	var a = [ 1 , 2 , 3 , 4 , 6 , 12 ] ;
 
@@ -14,13 +16,13 @@ test( "minima 1" , function ( ) {
 
 	var min = algorithms.clarkson( divides , a , 0 , a.length ) ;
 
-	deepEqual( min , 1 , "minima set has cardinality 1" ) ;
+	t.deepEqual( min , 1 , "minima set has cardinality 1" ) ;
 
-	deepEqual( a[0] , 1 , "minimum is 1" ) ;
+	t.deepEqual( a[0] , 1 , "minimum is 1" ) ;
 
 } ) ;
 
-test( "minima 2,3" , function ( ) {
+test( "minima 2,3" , t => {
 
 	var a = [ 1 , 2 , 3 , 4 , 6 , 12 ] ;
 
@@ -34,17 +36,17 @@ test( "minima 2,3" , function ( ) {
 
 	var min = algorithms.clarkson( divides , a , i , j ) ;
 
-	deepEqual( min - i , 2 , "minima set has cardinality 2" ) ;
+	t.deepEqual( min - i , 2 , "minima set has cardinality 2" ) ;
 
 	sort.insertionsort( compare.increasing , a , i , min ) ;
 
-	deepEqual( a[i+0] , 2 , "1st minimum is 2" ) ;
-	deepEqual( a[i+1] , 3 , "2nd minimum is 3" ) ;
+	t.deepEqual( a[i+0] , 2 , "1st minimum is 2" ) ;
+	t.deepEqual( a[i+1] , 3 , "2nd minimum is 3" ) ;
 
 } ) ;
 
 
-test( "minima totally unordered set" , function ( ) {
+test( "minima totally unordered set" , t => {
 
 	n = 1000 ;
 
@@ -58,6 +60,6 @@ test( "minima totally unordered set" , function ( ) {
 
 	var min = algorithms.clarkson( prec , a , 0 , n ) ;
 
-	deepEqual( min , n , "minima set has cardinality n" ) ;
+	t.deepEqual( min , n , "minima set has cardinality n" ) ;
 
 } ) ;

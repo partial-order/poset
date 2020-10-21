@@ -1,7 +1,9 @@
+import test from 'ava';
+import * as poset from '../../src';
 
-var array = require( "@aureooms/js-array" );
+import array from "@aureooms/js-array" ;
 
-test( "iter", function () {
+test( "iter", t => {
 
 	var f, b, fe, be, n;
 
@@ -18,7 +20,7 @@ test( "iter", function () {
 	algorithms.fiter( 0, n, f.push.bind(f) );
 	algorithms.biter( 0, n, b.push.bind(b) );
 
-	deepEqual( f, fe, "forward" );
-	deepEqual( b, be, "backward" );
+	t.deepEqual( f, fe, "forward" );
+	t.deepEqual( b, be, "backward" );
 
 });

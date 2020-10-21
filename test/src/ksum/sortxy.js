@@ -1,8 +1,10 @@
+import test from 'ava';
+import * as poset from '../../../src';
 
-var util = require( "util" ) ;
-var array = require( "@aureooms/js-array" ) ;
+import util from "util" ;
+import array from "@aureooms/js-array" ;
 
-test( "sortxy" , function ( ) {
+test( "sortxy" , t => {
 
 	var n , X , Y , v , w , k , __fn__ , contains , compare ;
 
@@ -70,7 +72,7 @@ test( "sortxy" , function ( ) {
 			continue ;
 		}
 
-		deepEqual( contains( v , w[k] ), true, w[k] + " in list" ) ;
+		t.deepEqual( contains( v , w[k] ), true, w[k] + " in list" ) ;
 	}
 
 } ) ;

@@ -1,3 +1,5 @@
+import test from 'ava';
+import * as poset from '../../src';
 
 var compare = algorithms.__absepsilon__( 1e-4 );
 
@@ -12,7 +14,7 @@ var run = function ( k, n, days, expected ) {
 };
 
 
-test( "birthdays", function () {
+test( "birthdays", t => {
 
 	run( 1, 3, 365, 1 - ( 364 / 365 * 364 / 365 ) );
 	run( 2, 3, 365, 1 - ( 364 / 365 * 363 / 365 ) );

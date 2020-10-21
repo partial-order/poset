@@ -1,16 +1,17 @@
+import test from 'ava';
+import * as poset from '../../src';
 
 
-var n;
 
-var itertools = require( "@aureooms/js-itertools" );
-var functools = require( "@aureooms/js-functools" );
-var splitting = require( "@aureooms/js-splitting" );
-var partition = require( "@aureooms/js-partition" ) ;
-var selection = require( "@aureooms/js-selection" ) ;
-var operator = require( "@aureooms/js-operator" );
-var compare = require( "@aureooms/js-compare" );
-var random = require( "@aureooms/js-random" );
-var array = require( "@aureooms/js-array" );
+import itertools from "@aureooms/js-itertools" ;
+import functools from "@aureooms/js-functools" ;
+import splitting from "@aureooms/js-splitting" ;
+import partition from "@aureooms/js-partition" ;
+import selection from "@aureooms/js-selection" ;
+import operator from "@aureooms/js-operator" ;
+import compare from "@aureooms/js-compare" ;
+import random from "@aureooms/js-random" ;
+import array from "@aureooms/js-array" ;
 
 var one = function ( bdp, __f__, a, i, j, di, dj, expected ) {
 
@@ -25,7 +26,7 @@ var one = function ( bdp, __f__, a, i, j, di, dj, expected ) {
 	array.sort( outputordering, out );
 	array.sort( outputordering, expected );
 
-	deepEqual( out, expected, n );
+	t.deepEqual( out, expected, n );
 
 };
 
@@ -33,7 +34,7 @@ var all = function ( name, algo ) {
 
 	n = 0;
 
-	test( name, function ( ) {
+test( name, t => {
 
 		var f, __f__;
 

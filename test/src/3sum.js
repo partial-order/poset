@@ -1,8 +1,10 @@
+import test from 'ava';
+import * as poset from '../../src';
 
-var util = require( "util" );
-var array = require( "@aureooms/js-array" );
+import util from "util" ;
+import array from "@aureooms/js-array" ;
 
-test("3sum", function(){
+test( "3sum", t => {
 
 	console.log("3sum");
 
@@ -65,11 +67,11 @@ test("3sum", function(){
 	_3sum_n3(A, 0, n, B, 0, n, C, 0, n, fnu);
 
 
-	deepEqual(w.length, u.length, "length check");
+	t.deepEqual(w.length, u.length, "length check");
 
 	var k;
 	for (k = 0; k < w.length; ++k) {
-		deepEqual(contains(u, w[k]), true, w[k] + " in list");
+		t.deepEqual(contains(u, w[k]), true, w[k] + " in list");
 	}
 
 });
