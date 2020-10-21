@@ -24,7 +24,7 @@
 
 export function clarkson(prec, a, i, j) {
 	//
-	// This algorithms reorganizes the input array `a` as follows
+	// This algorithm reorganizes the input array `a` as follows
 	//  - elements that are minima are put at the front of `a`
 	//  - other elements are put at the back of `a`
 	//
