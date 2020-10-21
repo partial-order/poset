@@ -8,7 +8,7 @@
  *   - |B| > 0
  */
 
-var _3sum_n2 = function (A, ai, aj, B, bi, bj, C, ci, cj, fn) {
+export function _3sum_n2 (A, ai, aj, B, bi, bj, C, ci, cj, fn) {
 
 	var hi, lo, a, b, c, v;
 
@@ -31,6 +31,5 @@ var _3sum_n2 = function (A, ai, aj, B, bi, bj, C, ci, cj, fn) {
 		} while (lo < aj && hi >= bi);
 	}
 
-};
+}
 
-exports._3sum_n2 = _3sum_n2;

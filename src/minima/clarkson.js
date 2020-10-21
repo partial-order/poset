@@ -23,7 +23,7 @@
  * -------------------- Kenneth L. Clarkson -
  */
 
-var clarkson = function ( prec , a , i , j ) {
+export function clarkson ( prec , a , i , j ) {
 
 	//
 	// This algorithms reorganizes the input array `a` as follows
@@ -114,6 +114,5 @@ var clarkson = function ( prec , a , i , j ) {
 
 	return min ;
 
-} ;
+}
 
-exports.clarkson = clarkson ;

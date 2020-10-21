@@ -20,7 +20,7 @@
  * Read Timoty Chan's paper for more information.
  */
 
-const chan = function ( split , shuffle , decide , bruteforce , issmall ) {
+export function chan ( split , shuffle , decide , bruteforce , issmall ) {
 
 	const solve = function ( instance ) {
 
@@ -44,6 +44,5 @@ const chan = function ( split , shuffle , decide , bruteforce , issmall ) {
 
 	return solve ;
 
-} ;
+}
 
-exports.chan = chan ;

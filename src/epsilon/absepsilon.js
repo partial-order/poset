@@ -1,6 +1,6 @@
 
 
-var __absepsilon__ = function ( epsilon ) {
+export function __absepsilon__ ( epsilon ) {
 
 
 	return function ( a, b ) {
@@ -13,6 +13,5 @@ var __absepsilon__ = function ( epsilon ) {
 
 	};
 
-};
+}
 
-exports.__absepsilon__ = __absepsilon__;

@@ -8,7 +8,7 @@
  * hypothesis : k <= n and k <= days
  */
 
-var samebirthday = function ( k, n, days ) {
+export function samebirthday ( k, n, days ) {
 
 	var i, p;
 
@@ -29,6 +29,5 @@ var samebirthday = function ( k, n, days ) {
 
 	return 1 - p;
 
-};
+}
 
-exports.samebirthday = samebirthday;

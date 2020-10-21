@@ -15,7 +15,7 @@
  */
 
 
-let __bdpdn2__ = function ( color, split ) {
+export function __bdpdn2__ ( color, split ) {
 
 	/**
 	 * a is an array of points
@@ -82,6 +82,5 @@ let __bdpdn2__ = function ( color, split ) {
 
 	return bdpdn2;
 
-};
+}
 
-exports.__bdpdn2__ = __bdpdn2__;

@@ -6,7 +6,7 @@
  * output takes 4 arguments
  *
  */
-var sortxy_n4 = function ( compare , X , Y ,  Xi1 , Xj1 , Yi1 , Yj1 , Xi2 , Xj2 , Yi2 , Yj2 , output ) {
+export function sortxy_n4 ( compare , X , Y ,  Xi1 , Xj1 , Yi1 , Yj1 , Xi2 , Xj2 , Yi2 , Yj2 , output ) {
 
 	var a , b , c , d , s ;
 
@@ -42,6 +42,5 @@ var sortxy_n4 = function ( compare , X , Y ,  Xi1 , Xj1 , Yi1 , Yj1 , Xi2 , Xj2 
 	sortxy_n4( compare , X , Y , Xi1 , Xi1 , Yi1 , Yi1 , Xi2 + 1 , Xj2 , Yi2 , Yj2 , output ) ;
 	sortxy_n4( compare , X , Y , Xi1 , Xi1 , Yi1 , Yi1 , Xi2 , Xi2 , Yi2 + 1 , Yj2 , output ) ;
 
-} ;
+}
 
-exports.sortxy_n4 = sortxy_n4 ;

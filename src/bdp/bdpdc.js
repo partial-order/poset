@@ -39,7 +39,7 @@
  */
 
 
-let __bdpdc__ = function ( select, __eq__, __ne__, color, split, swap ) {
+export function __bdpdc__ ( select, __eq__, __ne__, color, split, swap ) {
 
 	/**
 	 * a is an array of points
@@ -346,6 +346,5 @@ let __bdpdc__ = function ( select, __eq__, __ne__, color, split, swap ) {
 
 	return bdpdc;
 
-};
+}
 
-exports.__bdpdc__ = __bdpdc__;

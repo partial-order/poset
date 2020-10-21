@@ -18,7 +18,7 @@
  *
  */
 
-var evenkldtto2sum = function ( S , Si , Sj , a , ai , aj , A , Ai , Aj , B , Bi , Bj ) {
+export function evenkldtto2sum ( S , Si , Sj , a , ai , aj , A , Ai , Aj , B , Bi , Bj ) {
 
 	var i , j , p , q , n , halfk ;
 
@@ -74,6 +74,5 @@ var evenkldtto2sum = function ( S , Si , Sj , a , ai , aj , A , Ai , Aj , B , Bi
 
 	}
 
-} ;
+}
 
-exports.evenkldtto2sum = evenkldtto2sum;

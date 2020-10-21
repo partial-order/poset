@@ -1,5 +1,5 @@
 
-var __relepsilon__ = function ( epsilon ) {
+export function __relepsilon__ ( epsilon ) {
 
 
 	return function ( a, b ) {
@@ -24,6 +24,5 @@ var __relepsilon__ = function ( epsilon ) {
 
 	};
 
-};
+}
 
-exports.__relepsilon__ = __relepsilon__;

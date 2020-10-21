@@ -4,7 +4,7 @@
  * For max-weight independent set give the input in decreasing order wrt weights.
  */
 
-const max_independent_set = function ( independent , S ) {
+export function max_independent_set ( independent , S ) {
 
 	const set = [ ] ;
 
@@ -20,6 +20,5 @@ const max_independent_set = function ( independent , S ) {
 
 	return set ;
 
-} ;
+}
 
-exports.max_independent_set = max_independent_set ;

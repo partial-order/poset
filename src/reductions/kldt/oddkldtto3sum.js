@@ -20,7 +20,7 @@
  *
  */
 
-var oddkldtto3sum = function ( S , Si , Sj , a , ai , aj , A , Ai , Aj , B , Bi , Bj , C , Ci , Cj ) {
+export function oddkldtto3sum ( S , Si , Sj , a , ai , aj , A , Ai , Aj , B , Bi , Bj , C , Ci , Cj ) {
 
 	var i , j , p , q , n , halfk ;
 
@@ -78,6 +78,5 @@ var oddkldtto3sum = function ( S , Si , Sj , a , ai , aj , A , Ai , Aj , B , Bi 
 
 	}
 
-} ;
+}
 
-exports.oddkldtto3sum = oddkldtto3sum;
