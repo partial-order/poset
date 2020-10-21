@@ -1,68 +1,18 @@
 {
   "name": "@aureooms/js-algorithms",
   "description": "Playground for algorithms in JavaScript",
-  "homepage": "https://aureooms.github.io/js-algorithms",
-  "main": "lib/index.js",
   "version": "3.0.7",
-  "repository": {
-    "url": "https://github.com/aureooms/js-algorithms.git",
-    "type": "git"
-  },
-  "keywords": [
-    "adt",
-    "algorithm",
-    "complexity",
-    "ender",
-    "javascript",
-    "js",
-    "template"
-  ],
-  "scripts": {
-    "build": "babel --delete-dir-on-start --env-name production src -d lib",
-    "test": "ava",
-    "esdoc": "esdoc",
-    "lint": "true",
-    "prepare": "npm run build",
-    "cover": "nyc --reporter=lcov npm test",
-    "dev": "npm run lint -- --fix && npm run cover -- -- -st --fail-fast",
-    "travis": "npm run lint && npm run cover",
-    "release": "np"
-  },
   "author": "aureooms",
-  "devDependencies": {
-    "@aureooms/js-array": "^4.0.0",
-    "@aureooms/js-compare": "^1.4.8",
-    "@aureooms/js-functools": "^2.0.3",
-    "@aureooms/js-itertools": "^4.1.0",
-    "@aureooms/js-operator": "^1.0.2",
-    "@aureooms/js-partition": "^8.0.0",
-    "@aureooms/js-random": "^2.0.0",
-    "@aureooms/js-selection": "^9.0.0",
-    "@aureooms/js-sort": "^7.0.0",
-    "@aureooms/js-splitting": "^4.0.2",
-    "@babel/cli": "7.12.1",
-    "@babel/core": "7.12.3",
-    "@babel/preset-env": "7.12.1",
-    "@babel/register": "7.12.1",
-    "ava": "3.13.0",
-    "babel-plugin-transform-remove-console": "6.9.4",
-    "babel-plugin-unassert": "3.0.1",
-    "babel-preset-power-assert": "3.0.0",
-    "coveralls": "3.1.0",
-    "esdoc": "1.1.0",
-    "esdoc-inject-script-plugin": "1.0.0",
-    "esdoc-inject-style-plugin": "1.0.0",
-    "esdoc-standard-plugin": "1.0.0",
-    "np": "6.5.0",
-    "nyc": "15.1.0",
-    "power-assert": "1.6.1",
-    "regenerator-runtime": "0.13.7"
+  "ava": {
+    "files": [
+      "test/src/**/*"
+    ],
+    "require": [
+      "regenerator-runtime/runtime",
+      "@babel/register"
+    ],
+    "timeout": "1m"
   },
-  "bugs": {
-    "url": "https://github.com/aureooms/js-algorithms/issues"
-  },
-  "dependencies": {},
-  "license": "AGPL-3.0",
   "babel": {
     "presets": [
       "@babel/preset-env"
@@ -122,18 +72,68 @@
       }
     }
   },
-  "ava": {
-    "files": [
-      "test/src/**/*"
-    ],
-    "require": [
-      "regenerator-runtime/runtime",
-      "@babel/register"
-    ],
-    "timeout": "1m"
+  "bugs": {
+    "url": "https://github.com/aureooms/js-algorithms/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@aureooms/js-array": "^4.0.0",
+    "@aureooms/js-compare": "^1.4.8",
+    "@aureooms/js-functools": "^2.0.3",
+    "@aureooms/js-itertools": "^4.1.0",
+    "@aureooms/js-operator": "^1.0.2",
+    "@aureooms/js-partition": "^8.0.0",
+    "@aureooms/js-random": "^2.0.0",
+    "@aureooms/js-selection": "^9.0.0",
+    "@aureooms/js-sort": "^7.0.0",
+    "@aureooms/js-splitting": "^4.0.2",
+    "@babel/cli": "7.12.1",
+    "@babel/core": "7.12.3",
+    "@babel/preset-env": "7.12.1",
+    "@babel/register": "7.12.1",
+    "ava": "3.13.0",
+    "babel-plugin-transform-remove-console": "6.9.4",
+    "babel-plugin-unassert": "3.0.1",
+    "babel-preset-power-assert": "3.0.0",
+    "coveralls": "3.1.0",
+    "esdoc": "1.1.0",
+    "esdoc-inject-script-plugin": "1.0.0",
+    "esdoc-inject-style-plugin": "1.0.0",
+    "esdoc-standard-plugin": "1.0.0",
+    "np": "6.5.0",
+    "nyc": "15.1.0",
+    "power-assert": "1.6.1",
+    "regenerator-runtime": "0.13.7"
   },
   "files": [
     "lib"
   ],
+  "homepage": "https://aureooms.github.io/js-algorithms",
+  "keywords": [
+    "adt",
+    "algorithm",
+    "complexity",
+    "ender",
+    "javascript",
+    "js",
+    "template"
+  ],
+  "license": "AGPL-3.0",
+  "main": "lib/index.js",
+  "repository": {
+    "url": "https://github.com/aureooms/js-algorithms.git",
+    "type": "git"
+  },
+  "scripts": {
+    "build": "babel --delete-dir-on-start --env-name production src -d lib",
+    "cover": "nyc --reporter=lcov npm test",
+    "dev": "npm run lint -- --fix && npm run cover -- -- -st --fail-fast",
+    "esdoc": "esdoc",
+    "lint": "true",
+    "prepare": "npm run build",
+    "release": "np",
+    "test": "ava",
+    "travis": "npm run lint && npm run cover"
+  },
   "sideEffects": false
 }
