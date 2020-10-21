@@ -77,17 +77,17 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@aureooms/js-array": "^4.0.0",
-    "@aureooms/js-compare": "^1.4.8",
-    "@aureooms/js-functools": "^2.0.3",
-    "@aureooms/js-insertion-sort": "^0.0.1",
-    "@aureooms/js-itertools": "^4.1.0",
-    "@aureooms/js-operator": "^1.0.2",
-    "@aureooms/js-partition": "^8.0.0",
-    "@aureooms/js-random": "^2.0.0",
-    "@aureooms/js-selection": "^9.0.0",
-    "@aureooms/js-sort": "^7.0.0",
-    "@aureooms/js-splitting": "^4.0.2",
+    "@aureooms/js-array": "4.0.0",
+    "@aureooms/js-compare": "1.4.8",
+    "@aureooms/js-functools": "2.0.3",
+    "@aureooms/js-insertion-sort": "0.0.1",
+    "@aureooms/js-itertools": "4.1.0",
+    "@aureooms/js-operator": "1.0.2",
+    "@aureooms/js-partition": "8.0.0",
+    "@aureooms/js-random": "2.0.0",
+    "@aureooms/js-selection": "9.0.0",
+    "@aureooms/js-sort": "7.0.0",
+    "@aureooms/js-splitting": "4.0.2",
     "@babel/cli": "7.12.1",
     "@babel/core": "7.12.3",
     "@babel/preset-env": "7.12.1",
@@ -105,7 +105,7 @@
     "nyc": "15.1.0",
     "power-assert": "1.6.1",
     "regenerator-runtime": "0.13.7",
-    "xo": "^0.34.1"
+    "xo": "0.34.1"
   },
   "files": [
     "lib"
