@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@aureooms/js-array@^4.0.0":
+"@aureooms/js-array@4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@aureooms/js-array/-/js-array-4.0.0.tgz#ea64b7c788644f40bbb92259a6098ac14a4eca6c"
   integrity sha1-6mS3x4hkT0C7uSJZpgmKwUpOymw=
@@ -14,7 +14,7 @@
   dependencies:
     "@aureooms/js-error" "^4.0.1"
 
-"@aureooms/js-compare@^1.4.8":
+"@aureooms/js-compare@1.4.8":
   version "1.4.8"
   resolved "https://registry.yarnpkg.com/@aureooms/js-compare/-/js-compare-1.4.8.tgz#c6bff1091f4a2e211f449299572d9f195146fc59"
   integrity sha512-Z26PU6OmuhS7ZJsELTKImmipF7J+KCOyN70wBhhVIhmqUhXY6C3JpJHAev6wNBkC4ThlQt3zO6p/OmBFIq76Qg==
@@ -24,17 +24,17 @@
   resolved "https://registry.yarnpkg.com/@aureooms/js-error/-/js-error-4.0.1.tgz#be2740b3f31a337e0828930c9b70d38113b4dd77"
   integrity sha512-zsgs6wmnRsKljlusewYiBaFBM/hIJp43b7OwE9ybpLEL4wfXjGP17cJTTAY8gpzALVFwEA5/flxIK0I6gJJLHQ==
 
-"@aureooms/js-functools@^2.0.3":
+"@aureooms/js-functools@2.0.3":
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@aureooms/js-functools/-/js-functools-2.0.3.tgz#5139d6245278193da4cf21c44666797bf40a1d6e"
   integrity sha1-UTnWJFJ4GT2kzyHERmZ5e/QKHW4=
 
-"@aureooms/js-insertion-sort@^0.0.1":
+"@aureooms/js-insertion-sort@0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@aureooms/js-insertion-sort/-/js-insertion-sort-0.0.1.tgz#136b7bec0e21d3e56315abf2fa3c368b8af5e787"
   integrity sha512-qcmT2wIIXGlUpHS2UF7xuccFI7gngUDsQnO5+Y0nIehjD92JKw+QpPqbAUdTZCPOUmvhAYMEu5jh6oqvs2miIQ==
 
-"@aureooms/js-itertools@^4.1.0":
+"@aureooms/js-itertools@4.1.0":
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/@aureooms/js-itertools/-/js-itertools-4.1.0.tgz#c731eaee7de0005c6ea41f2f87cca4bdb2d86ca1"
   integrity sha512-P9TfwQPuXk5T5z6QMMfwLLyzh9QsEu4sGWcBk/P/waWgim/xqr+LDTOHVo7WU4QAty+/5CBX8DuW7MrPVfXt5A==
@@ -42,32 +42,32 @@
     "@aureooms/js-collections-deque" "^4.0.1"
     "@aureooms/js-error" "^4.0.1"
 
-"@aureooms/js-operator@^1.0.2":
+"@aureooms/js-operator@1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@aureooms/js-operator/-/js-operator-1.0.2.tgz#0786d77d9977823ae7bc04360a315c45bb4c1e65"
   integrity sha1-B4bXfZl3gjrnvAQ2CjFcRbtMHmU=
 
-"@aureooms/js-partition@^8.0.0":
+"@aureooms/js-partition@8.0.0":
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/@aureooms/js-partition/-/js-partition-8.0.0.tgz#c68853794eea091ac905f3d34717d590fd672f19"
   integrity sha1-xohTeU7qCRrJBfPTRxfVkP1nLxk=
 
-"@aureooms/js-random@^2.0.0":
+"@aureooms/js-random@2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@aureooms/js-random/-/js-random-2.0.0.tgz#f62c6954ed79bd9a520197125ee3cfbe14b00d72"
   integrity sha1-9ixpVO15vZpSAZcSXuPPvhSwDXI=
 
-"@aureooms/js-selection@^9.0.0":
+"@aureooms/js-selection@9.0.0":
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/@aureooms/js-selection/-/js-selection-9.0.0.tgz#ec425985debc21c6153a3ee3ac7c5a821683a472"
   integrity sha1-7EJZhd68IcYVOj7jrHxaghaDpHI=
 
-"@aureooms/js-sort@^7.0.0":
+"@aureooms/js-sort@7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@aureooms/js-sort/-/js-sort-7.0.0.tgz#db3c8b93acd93ee0500462b2cec29239c3deb34d"
   integrity sha1-2zyLk6zZPuBQBGKyzsKSOcPes00=
 
-"@aureooms/js-splitting@^4.0.2":
+"@aureooms/js-splitting@4.0.2":
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/@aureooms/js-splitting/-/js-splitting-4.0.2.tgz#a9518fdb04b9e808ea88ff8b9d0e74665215a85d"
   integrity sha1-qVGP2wS56AjqiP+LnQ50ZlIVqF0=
@@ -8287,7 +8287,7 @@ xdg-basedir@^4.0.0:
   resolved "https://registry.yarnpkg.com/xml-name-validator/-/xml-name-validator-2.0.1.tgz#4d8b8f1eccd3419aa362061becef515e1e559635"
   integrity sha1-TYuPHszTQZqjYgYb7O9RXh5VljU=
 
-xo@^0.34.1:
+xo@0.34.1:
   version "0.34.1"
   resolved "https://registry.yarnpkg.com/xo/-/xo-0.34.1.tgz#0a0933fe864b654ca35cbfb71f18a7b4b9b357b6"
   integrity sha512-i8ChTBFNZjzZ26gCoxVxDQ5yBfKAmJyKAzfPfiTvGLezqeWEdj6t/MmOEFi3nJFQzsX1rzBBRbBBgNicbcn8sA==
