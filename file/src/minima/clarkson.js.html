@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/minima/clarkson.js | @aureooms/js-poset</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<link rel="stylesheet" href="./inject/css/0-style.css"><script src="./inject/script/0-header.js"></script><meta name="description" content="Partially ordered sets algorithms for JavaScript."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@aureooms/js-poset"><meta property="twitter:description" content="Partially ordered sets algorithms for JavaScript."></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/aureooms/js-poset.git"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#minima">minima</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-clarkson">clarkson</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/minima/clarkson.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * Output sensitive inplace algorithm to find the minima set of a set S of
+ * elements according to some partial order.
+ *
+ * Uses at most 3nA comparisons where A is the cardinality of the minima set.
+ *
+ * For (1), at most nA comparisons are used since we compare each element of S
+ * with each elements of the minima set which is of cardinality at most A
+ * during the execution of the algorithm.
+ *
+ * For (2), for each executed loop we
+ * obtain a new minimum and increase the size of the constructed minima set by
+ * 1, hence there are at most A loops execution, each of which loops over at
+ * most n elements. (2) uses thus at most nA comparisons.
+ *
+ * The running time is dominated by the comparison time and thus the complexity
+ * of this algorihtm is O(nA).
+ *
+ * Description and context in
+ * ------------------------------------------
+ * More Output-Sensitive Geometric Algorithms.
+ * -------------------- Kenneth L. Clarkson -
+ */
+
+export function clarkson(prec, a, i, j) {
+	//
+	// This algorithm reorganizes the input array `a` as follows
+	//  - elements that are minima are put at the front of `a`
+	//  - other elements are put at the back of `a`
+	//
+	// During the algorithm, `a` looks like this
+	//
+	//  ------------------------------------------------------
+	// | minima set | candidate elements | discarded elements |
+	//  ------------------------------------------------------
+	//  i           min                dis                     j
+
+	let min;
+	let dis;
+	let k;
+	let inc;
+	let temporary;
+
+	min = i;
+	dis = j - 1;
+
+	// While there are candidate elements left.
+
+	while (min &lt;= dis) {
+		// (1) Determine if the right-most candidate should be discarded because it
+		// is dominated by one of the minima elements of the minima set in
+		// construction.
+
+		for (k = i; k &lt; min &amp;&amp; !prec(a[k], a[dis]); ++k);
+
+		// If so, discard it.
+
+		if (k &lt; min) {
+			--dis;
+		}
+
+		// (2) Otherwise, scan the candidates for a minimum. If at this point the
+		// candidate set is not empty, at least one of its elements must be a
+		// minimum. We scan the candidate list to find such a minimum.
+		else {
+			// Store the current minimum as the left-most candidate.
+
+			temporary = a[dis];
+			a[dis] = a[min];
+			a[min] = temporary;
+
+			// For each other candidate, right-to-left.
+
+			for (inc = min + 1; inc &lt;= dis; ) {
+				// If the current minimum precedes the right-most candidate,
+				// discard the right-most candidate.
+
+				if (prec(a[min], a[dis])) {
+					--dis;
+				}
+
+				// Else, if the right-most candidate precedes the current
+				// minimum, we can discard the current minimum and the
+				// right-most candidate becomes the current minimum.
+				else if (prec(a[dis], a[min])) {
+					temporary = a[dis];
+					a[dis] = a[min];
+					a[min] = temporary;
+					--dis;
+				}
+
+				// Otherwise, we save the candidate for the next round.
+				else {
+					temporary = a[dis];
+					a[dis] = a[inc];
+					a[inc] = temporary;
+					++inc;
+				}
+			}
+
+			// The above loop selects a new minimum from the set of candidates
+			// and places it at position `min`. We now increase the `min`
+			// counter to move this minimum from the candidate list to the
+			// minima set.
+
+			++min;
+		}
+	}
+
+	// The algorithm returns the outer right bound of the minima set a[i:min].
+
+	return min;
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
