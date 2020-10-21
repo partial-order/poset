@@ -23,7 +23,8 @@
     "esdoc": "esdoc",
     "lint": "true",
     "prepare": "npm run build",
-    "cover": "nyc --reporter=lcov npm test"
+    "cover": "nyc --reporter=lcov npm test",
+    "dev": "npm run lint -- --fix && npm run cover -- -- -st --fail-fast"
   },
   "author": "aureooms",
   "devDependencies": {
