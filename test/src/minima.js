@@ -1,6 +1,6 @@
 import test from 'ava';
 
-import {clarkson} from '../../src';
+import {minima} from '../../src';
 
 import {sort} from '@aureooms/js-insertion-sort';
 import {alloc, iota} from '@aureooms/js-array';
@@ -15,7 +15,7 @@ test('minima 1', (t) => {
 
 	shuffle(a, 0, a.length);
 
-	const min = clarkson(divides, a, 0, a.length);
+	const min = minima(divides, a, 0, a.length);
 
 	t.is(min, 1, 'minima set has cardinality 1');
 
@@ -31,7 +31,7 @@ test('minima 2,3', (t) => {
 
 	shuffle(a, i, j);
 
-	const min = clarkson(divides, a, i, j);
+	const min = minima(divides, a, i, j);
 
 	t.is(min - i, 2, 'minima set has cardinality 2');
 
@@ -50,7 +50,7 @@ test('minima totally unordered set', (t) => {
 
 	shuffle(a, 0, n);
 
-	const min = clarkson(norel, a, 0, n);
+	const min = minima(norel, a, 0, n);
 
 	t.deepEqual(min, n, 'minima set has cardinality n');
 });

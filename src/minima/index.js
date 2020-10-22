@@ -1,1 +1,5 @@
-export * from './clarkson';
+import clarkson from './clarkson';
+
+export default clarkson;
+
+export {clarkson};

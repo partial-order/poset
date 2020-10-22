@@ -8,17 +8,17 @@ See [docs](https://aureooms.github.io/js-poset).
 Parent is [@aureooms/js-algorithms](https://github.com/aureooms/js-algorithms).
 
 ```js
-import {clarkson} from '@aureooms/js-poset';
+import {minima} from '@aureooms/js-poset';
 import {increasing} from '@aureooms/js-compare';
 
 const a = [4, 12, 2, 6, 3];
 
 const divides = (a, b) => b % a === 0;
-const n = clarkson(divides, a, 0, a.length); // 2
+const n = minima(divides, a, 0, a.length); // 2
 a.slice(0, n).sort(increasing); // 2 3
 
 const norel = (_a, _b) => false;
-clarkson(norel, a, 0, a.length); // a.length
+minima(norel, a, 0, a.length); // a.length
 ```
 
 [![License](https://img.shields.io/github/license/aureooms/js-poset.svg)](https://raw.githubusercontent.com/aureooms/js-poset/master/LICENSE)
