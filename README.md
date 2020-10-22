@@ -21,9 +21,9 @@ const norel = (_a, _b) => false;
 clarkson(norel, a, 0, a.length); // a.length
 ```
 
-[![License](https://img.shields.io/github/license/aureooms/js-poset.svg)](https://raw.githubusercontent.com/aureooms/js-poset/main/LICENSE)
+[![License](https://img.shields.io/github/license/aureooms/js-poset.svg)](https://raw.githubusercontent.com/aureooms/js-poset/master/LICENSE)
 [![Version](https://img.shields.io/npm/v/@aureooms/js-poset.svg)](https://www.npmjs.org/package/@aureooms/js-poset)
-[![Build](https://img.shields.io/travis/aureooms/js-poset/main.svg)](https://travis-ci.org/aureooms/js-poset/branches)
+[![Build](https://img.shields.io/travis/aureooms/js-poset/master.svg)](https://travis-ci.org/aureooms/js-poset/branches)
 [![Dependencies](https://img.shields.io/david/aureooms/js-poset.svg)](https://david-dm.org/aureooms/js-poset)
 [![Dev dependencies](https://img.shields.io/david/dev/aureooms/js-poset.svg)](https://david-dm.org/aureooms/js-poset?type=dev)
 [![GitHub issues](https://img.shields.io/github/issues/aureooms/js-poset.svg)](https://github.com/aureooms/js-poset/issues)
@@ -31,7 +31,7 @@ clarkson(norel, a, 0, a.length); // a.length
 
 [![Code issues](https://img.shields.io/codeclimate/issues/aureooms/js-poset.svg)](https://codeclimate.com/github/aureooms/js-poset/issues)
 [![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-poset.svg)](https://codeclimate.com/github/aureooms/js-poset/trends/churn)
-[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-poset/main.svg)](https://codecov.io/gh/aureooms/js-poset)
+[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-poset/master.svg)](https://codecov.io/gh/aureooms/js-poset)
 [![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-poset.svg)](https://codeclimate.com/github/aureooms/js-poset/trends/technical_debt)
 [![Documentation](https://aureooms.github.io/js-poset/badge.svg)](https://aureooms.github.io/js-poset/source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-poset)](https://bundlephobia.com/result?p=@aureooms/js-poset)
