@@ -1,37 +1,37 @@
 {
   "type": "File",
   "start": 0,
-  "end": 28,
+  "end": 81,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 2,
+      "line": 6,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 28,
+    "end": 81,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 2,
+        "line": 6,
         "column": 0
       }
     },
     "sourceType": "module",
     "body": [
       {
-        "type": "ExportAllDeclaration",
+        "type": "ImportDeclaration",
         "start": 0,
-        "end": 27,
+        "end": 34,
         "loc": {
           "start": {
             "line": 1,
@@ -39,21 +39,55 @@
           },
           "end": {
             "line": 1,
-            "column": 27
+            "column": 34
           }
         },
+        "specifiers": [
+          {
+            "type": "ImportDefaultSpecifier",
+            "start": 7,
+            "end": 15,
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 7
+              },
+              "end": {
+                "line": 1,
+                "column": 15
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 7,
+              "end": 15,
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 7
+                },
+                "end": {
+                  "line": 1,
+                  "column": 15
+                },
+                "identifierName": "clarkson"
+              },
+              "name": "clarkson"
+            }
+          }
+        ],
         "source": {
           "type": "StringLiteral",
-          "start": 14,
-          "end": 26,
+          "start": 21,
+          "end": 33,
           "loc": {
             "start": {
               "line": 1,
-              "column": 14
+              "column": 21
             },
             "end": {
               "line": 1,
-              "column": 26
+              "column": 33
             }
           },
           "extra": {
@@ -62,6 +96,108 @@
           },
           "value": "./clarkson"
         }
+      },
+      {
+        "type": "ExportDefaultDeclaration",
+        "start": 36,
+        "end": 60,
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 0
+          },
+          "end": {
+            "line": 3,
+            "column": 24
+          }
+        },
+        "declaration": {
+          "type": "Identifier",
+          "start": 51,
+          "end": 59,
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 15
+            },
+            "end": {
+              "line": 3,
+              "column": 23
+            },
+            "identifierName": "clarkson"
+          },
+          "name": "clarkson",
+          "leadingComments": [],
+          "trailingComments": []
+        }
+      },
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 62,
+        "end": 80,
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 0
+          },
+          "end": {
+            "line": 5,
+            "column": 18
+          }
+        },
+        "declaration": null,
+        "specifiers": [
+          {
+            "type": "ExportSpecifier",
+            "start": 70,
+            "end": 78,
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 8
+              },
+              "end": {
+                "line": 5,
+                "column": 16
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 70,
+              "end": 78,
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 8
+                },
+                "end": {
+                  "line": 5,
+                  "column": 16
+                },
+                "identifierName": "clarkson"
+              },
+              "name": "clarkson"
+            },
+            "exported": {
+              "type": "Identifier",
+              "start": 70,
+              "end": 78,
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 8
+                },
+                "end": {
+                  "line": 5,
+                  "column": 16
+                },
+                "identifierName": "clarkson"
+              },
+              "name": "clarkson"
+            }
+          }
+        ],
+        "source": null
       }
     ],
     "directives": []
@@ -70,10 +206,10 @@
   "tokens": [
     {
       "type": {
-        "label": "export",
-        "keyword": "export",
+        "label": "import",
+        "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -82,7 +218,7 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "export",
+      "value": "import",
       "start": 0,
       "end": 6,
       "loc": {
@@ -98,20 +234,19 @@
     },
     {
       "type": {
-        "label": "*",
-        "beforeExpr": true,
-        "startsExpr": false,
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
         "prefix": false,
         "postfix": false,
-        "binop": 10,
-        "updateContext": null
+        "binop": null
       },
-      "value": "*",
+      "value": "clarkson",
       "start": 7,
-      "end": 8,
+      "end": 15,
       "loc": {
         "start": {
           "line": 1,
@@ -119,7 +254,7 @@
         },
         "end": {
           "line": 1,
-          "column": 8
+          "column": 15
         }
       }
     },
@@ -136,16 +271,16 @@
         "binop": null
       },
       "value": "from",
-      "start": 9,
-      "end": 13,
+      "start": 16,
+      "end": 20,
       "loc": {
         "start": {
           "line": 1,
-          "column": 9
+          "column": 16
         },
         "end": {
           "line": 1,
-          "column": 13
+          "column": 20
         }
       }
     },
@@ -163,16 +298,16 @@
         "updateContext": null
       },
       "value": "./clarkson",
-      "start": 14,
-      "end": 26,
+      "start": 21,
+      "end": 33,
       "loc": {
         "start": {
           "line": 1,
-          "column": 14
+          "column": 21
         },
         "end": {
           "line": 1,
-          "column": 26
+          "column": 33
         }
       }
     },
@@ -189,16 +324,254 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 26,
-      "end": 27,
+      "start": 33,
+      "end": 34,
       "loc": {
         "start": {
           "line": 1,
-          "column": 26
+          "column": 33
         },
         "end": {
           "line": 1,
-          "column": 27
+          "column": 34
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 36,
+      "end": 42,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "default",
+        "keyword": "default",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "default",
+      "start": 43,
+      "end": 50,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 7
+        },
+        "end": {
+          "line": 3,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "clarkson",
+      "start": 51,
+      "end": 59,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 15
+        },
+        "end": {
+          "line": 3,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 59,
+      "end": 60,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 23
+        },
+        "end": {
+          "line": 3,
+          "column": 24
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 62,
+      "end": 68,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 69,
+      "end": 70,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 7
+        },
+        "end": {
+          "line": 5,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "clarkson",
+      "start": 70,
+      "end": 78,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 8
+        },
+        "end": {
+          "line": 5,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 78,
+      "end": 79,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 16
+        },
+        "end": {
+          "line": 5,
+          "column": 17
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 79,
+      "end": 80,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 17
+        },
+        "end": {
+          "line": 5,
+          "column": 18
         }
       }
     },
@@ -215,15 +588,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 28,
-      "end": 28,
+      "start": 81,
+      "end": 81,
       "loc": {
         "start": {
-          "line": 2,
+          "line": 6,
           "column": 0
         },
         "end": {
-          "line": 2,
+          "line": 6,
           "column": 0
         }
       }

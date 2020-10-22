@@ -38,28 +38,28 @@
 <p>Partially ordered sets algorithms for JavaScript.
 See <a href="https://aureooms.github.io/js-poset">docs</a>.
 Parent is <a href="https://github.com/aureooms/js-algorithms">@aureooms/js-algorithms</a>.</p>
-<pre><code class="lang-js"><code class="source-code prettyprint">import {clarkson} from &apos;@aureooms/js-poset&apos;;
+<pre><code class="lang-js"><code class="source-code prettyprint">import {minima} from &apos;@aureooms/js-poset&apos;;
 import {increasing} from &apos;@aureooms/js-compare&apos;;
 
 const a = [4, 12, 2, 6, 3];
 
 const divides = (a, b) =&gt; b % a === 0;
-const n = clarkson(divides, a, 0, a.length); // 2
+const n = minima(divides, a, 0, a.length); // 2
 a.slice(0, n).sort(increasing); // 2 3
 
 const norel = (_a, _b) =&gt; false;
-clarkson(norel, a, 0, a.length); // a.length</code>
+minima(norel, a, 0, a.length); // a.length</code>
 </code></pre>
-<p><a href="https://raw.githubusercontent.com/aureooms/js-poset/main/LICENSE"><img src="https://img.shields.io/github/license/aureooms/js-poset.svg" alt="License"></a>
+<p><a href="https://raw.githubusercontent.com/aureooms/js-poset/master/LICENSE"><img src="https://img.shields.io/github/license/aureooms/js-poset.svg" alt="License"></a>
 <a href="https://www.npmjs.org/package/@aureooms/js-poset"><img src="https://img.shields.io/npm/v/@aureooms/js-poset.svg" alt="Version"></a>
-<a href="https://travis-ci.org/aureooms/js-poset/branches"><img src="https://img.shields.io/travis/aureooms/js-poset/main.svg" alt="Build"></a>
+<a href="https://travis-ci.org/aureooms/js-poset/branches"><img src="https://img.shields.io/travis/aureooms/js-poset/master.svg" alt="Build"></a>
 <a href="https://david-dm.org/aureooms/js-poset"><img src="https://img.shields.io/david/aureooms/js-poset.svg" alt="Dependencies"></a>
 <a href="https://david-dm.org/aureooms/js-poset?type=dev"><img src="https://img.shields.io/david/dev/aureooms/js-poset.svg" alt="Dev dependencies"></a>
 <a href="https://github.com/aureooms/js-poset/issues"><img src="https://img.shields.io/github/issues/aureooms/js-poset.svg" alt="GitHub issues"></a>
 <a href="https://www.npmjs.org/package/@aureooms/js-poset"><img src="https://img.shields.io/npm/dm/@aureooms/js-poset.svg" alt="Downloads"></a></p>
 <p><a href="https://codeclimate.com/github/aureooms/js-poset/issues"><img src="https://img.shields.io/codeclimate/issues/aureooms/js-poset.svg" alt="Code issues"></a>
 <a href="https://codeclimate.com/github/aureooms/js-poset/trends/churn"><img src="https://img.shields.io/codeclimate/maintainability/aureooms/js-poset.svg" alt="Code maintainability"></a>
-<a href="https://codecov.io/gh/aureooms/js-poset"><img src="https://img.shields.io/codecov/c/gh/aureooms/js-poset/main.svg" alt="Code coverage (cov)"></a>
+<a href="https://codecov.io/gh/aureooms/js-poset"><img src="https://img.shields.io/codecov/c/gh/aureooms/js-poset/master.svg" alt="Code coverage (cov)"></a>
 <a href="https://codeclimate.com/github/aureooms/js-poset/trends/technical_debt"><img src="https://img.shields.io/codeclimate/tech-debt/aureooms/js-poset.svg" alt="Code technical debt"></a>
 <a href="https://aureooms.github.io/js-poset/source.html"><img src="https://aureooms.github.io/js-poset/badge.svg" alt="Documentation"></a>
 <a href="https://bundlephobia.com/result?p=@aureooms/js-poset"><img src="https://img.shields.io/bundlephobia/minzip/@aureooms/js-poset" alt="Package size"></a></p>

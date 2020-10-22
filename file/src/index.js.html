@@ -35,7 +35,14 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/index.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">export * from &apos;./minima&apos;;
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import minima from &apos;./minima&apos;;
+
+/* eslint import/no-anonymous-default-export: [2, {&quot;allowObject&quot;: true}] */
+export default {
+	minima
+};
+
+export {minima};
 </code></pre>
 
 </div>
