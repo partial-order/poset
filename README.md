@@ -1,7 +1,16 @@
 :spider_web: [@aureooms/js-poset](https://aureooms.github.io/js-poset)
 ==
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Birkhoff120.svg" width="864">
+<p align="center">
+<a href="https://commons.wikimedia.org/wiki/File:Birkhoff120.svg">
+<img alt="Distributive lattice of the divisors of 120" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Birkhoff120.svg" width="600">
+</a><br/>
+<a href="https://en.wikipedia.org/wiki/User:David_Eppstein">
+User:David_Eppstein
+</a>
+/
+<a href="https://en.wikipedia.org/wiki/Public_domain">Public Domain</a>
+</p>
 
 Partially ordered sets algorithms for JavaScript.
 See [docs](https://aureooms.github.io/js-poset).
