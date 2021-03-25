@@ -2,7 +2,69 @@
   "name": "@aureooms/js-poset",
   "description": "Partially ordered sets algorithms for JavaScript.",
   "version": "4.1.0",
+  "license": "AGPL-3.0",
   "author": "aureooms",
+  "homepage": "https://aureooms.github.io/js-poset",
+  "repository": {
+    "url": "https://github.com/aureooms/js-poset",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/aureooms/js-poset/issues"
+  },
+  "keywords": [
+    "adt",
+    "algorithm",
+    "complexity",
+    "ender",
+    "javascript",
+    "js",
+    "template"
+  ],
+  "sideEffects": false,
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "babel --delete-dir-on-start --env-name production src -d lib",
+    "cover": "nyc --reporter=lcov npm test",
+    "dev": "npm run lint -- --fix && npm run cover -- -- -st --fail-fast",
+    "esdoc": "esdoc",
+    "lint": "xo",
+    "lint-config": "fixpack --dryRun",
+    "lint-config-and-fix": "fixpack || fixpack",
+    "prepare": "npm run build",
+    "release": "np",
+    "test": "ava",
+    "travis": "npm run lint && npm run cover"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@aureooms/js-array": "4.0.0",
+    "@aureooms/js-compare": "2.0.0",
+    "@aureooms/js-insertion-sort": "0.0.1",
+    "@aureooms/js-random": "2.0.0",
+    "@babel/cli": "7.13.10",
+    "@babel/core": "7.13.10",
+    "@babel/preset-env": "7.13.12",
+    "@babel/register": "7.13.8",
+    "ava": "3.15.0",
+    "babel-plugin-transform-remove-console": "6.9.4",
+    "babel-plugin-unassert": "3.0.1",
+    "babel-preset-power-assert": "3.0.0",
+    "coveralls": "3.1.0",
+    "esdoc": "1.1.0",
+    "esdoc-inject-script-plugin": "1.0.0",
+    "esdoc-inject-style-plugin": "1.0.0",
+    "esdoc-standard-plugin": "1.0.0",
+    "fixpack": "4.0.0",
+    "np": "7.4.0",
+    "nyc": "15.1.0",
+    "power-assert": "1.6.1",
+    "regenerator-runtime": "0.13.7",
+    "xo": "0.38.2"
+  },
   "ava": {
     "files": [
       "test/src/**/*"
@@ -72,68 +134,6 @@
       }
     }
   },
-  "bugs": {
-    "url": "https://github.com/aureooms/js-poset/issues"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "@aureooms/js-array": "4.0.0",
-    "@aureooms/js-compare": "2.0.0",
-    "@aureooms/js-insertion-sort": "0.0.1",
-    "@aureooms/js-random": "2.0.0",
-    "@babel/cli": "7.13.10",
-    "@babel/core": "7.13.10",
-    "@babel/preset-env": "7.13.12",
-    "@babel/register": "7.13.8",
-    "ava": "3.15.0",
-    "babel-plugin-transform-remove-console": "6.9.4",
-    "babel-plugin-unassert": "3.0.1",
-    "babel-preset-power-assert": "3.0.0",
-    "coveralls": "3.1.0",
-    "esdoc": "1.1.0",
-    "esdoc-inject-script-plugin": "1.0.0",
-    "esdoc-inject-style-plugin": "1.0.0",
-    "esdoc-standard-plugin": "1.0.0",
-    "np": "7.4.0",
-    "nyc": "15.1.0",
-    "power-assert": "1.6.1",
-    "regenerator-runtime": "0.13.7",
-    "xo": "0.38.2",
-    "fixpack": "4.0.0"
-  },
-  "files": [
-    "lib"
-  ],
-  "homepage": "https://aureooms.github.io/js-poset",
-  "keywords": [
-    "adt",
-    "algorithm",
-    "complexity",
-    "ender",
-    "javascript",
-    "js",
-    "template"
-  ],
-  "license": "AGPL-3.0",
-  "main": "lib/index.js",
-  "repository": {
-    "url": "https://github.com/aureooms/js-poset",
-    "type": "git"
-  },
-  "scripts": {
-    "build": "babel --delete-dir-on-start --env-name production src -d lib",
-    "cover": "nyc --reporter=lcov npm test",
-    "dev": "npm run lint -- --fix && npm run cover -- -- -st --fail-fast",
-    "esdoc": "esdoc",
-    "lint": "xo",
-    "prepare": "npm run build",
-    "release": "np",
-    "test": "ava",
-    "travis": "npm run lint && npm run cover",
-    "lint-config-and-fix": "fixpack || fixpack",
-    "lint-config": "fixpack --dryRun"
-  },
-  "sideEffects": false,
   "xo": {
     "prettier": true,
     "ignore": [
