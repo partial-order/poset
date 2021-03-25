@@ -6,6 +6,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "@aureooms/js-poset/src/minima/minima.js~minima",
+    "variable/index.html#static-variable-minima",
+    "<span>minima</span> <span class=\"search-result-import-path\">@aureooms/js-poset/src/minima/minima.js</span>",
+    "variable"
+  ],
+  [
     "src/.external-ecmascript.js~array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
     "src/.external-ecmascript.js~Array",
@@ -300,9 +306,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/minima/index.js",
-    "file/src/minima/index.js.html",
-    "src/minima/index.js",
+    "src/minima/minima.js",
+    "file/src/minima/minima.js.html",
+    "src/minima/minima.js",
     "file"
   ]
 ]

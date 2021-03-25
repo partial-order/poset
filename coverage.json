@@ -1,9 +1,14 @@
 {
   "coverage": "100%",
-  "expectCount": 1,
-  "actualCount": 1,
+  "expectCount": 2,
+  "actualCount": 2,
   "files": {
     "src/minima/clarkson.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/minima/minima.js": {
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []
