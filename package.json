@@ -1,7 +1,7 @@
 {
   "name": "@aureooms/js-poset",
   "description": "Partially ordered sets algorithms for JavaScript.",
-  "version": "4.1.0",
+  "version": "5.0.0",
   "license": "AGPL-3.0",
   "author": "aureooms",
   "homepage": "https://aureooms.github.io/js-poset",
