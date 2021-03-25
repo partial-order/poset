@@ -28,8 +28,7 @@
  *
  * @return {number} non-inclusive right bound of the minima set
  */
-
-export default function clarkson(prec, a, i, j) {
+const clarkson = (prec, a, i, j) => {
 	//
 	// This algorithm reorganizes the input array `a` as follows
 	//  - elements that are minima are put at the front of `a`
@@ -117,4 +116,6 @@ export default function clarkson(prec, a, i, j) {
 	// The algorithm returns the outer right bound of the minima set a[i:min].
 
 	return min;
-}
+};
+
+export default clarkson;
