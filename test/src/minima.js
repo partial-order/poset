@@ -1,6 +1,6 @@
 import test from 'ava';
 
-import {minima} from "../../src/index.js";
+import {minima} from '../../src/index.js';
 
 import {sort} from '@aureooms/js-insertion-sort';
 import {alloc, iota} from '@aureooms/js-array';
