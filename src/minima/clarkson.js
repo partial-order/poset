@@ -20,6 +20,13 @@
  * ------------------------------------------
  * More Output-Sensitive Geometric Algorithms.
  * -------------------- Kenneth L. Clarkson -
+ *
+ * @param {function} prec relation
+ * @param {any[]} a input array
+ * @param {number} i inclusive left bound of the input
+ * @param {number} j non-inclusive right bound of the input
+ *
+ * @return {number} non-inclusive right bound of the minima set
  */
 
 export default function clarkson(prec, a, i, j) {
