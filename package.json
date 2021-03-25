@@ -98,6 +98,7 @@
     "timeout": "1m"
   },
   "babel": {
+    "sourceMaps": true,
     "presets": [
       [
         "@babel/preset-env",
@@ -176,8 +177,7 @@
           ]
         ]
       }
-    },
-    "sourceMaps": true
+    }
   },
   "xo": {
     "prettier": true,
