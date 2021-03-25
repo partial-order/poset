@@ -32,7 +32,7 @@ minima(norel, a, 0, a.length); // a.length
 
 [![License](https://img.shields.io/github/license/aureooms/js-poset.svg)](https://raw.githubusercontent.com/aureooms/js-poset/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@aureooms/js-poset.svg)](https://www.npmjs.org/package/@aureooms/js-poset)
-[![Build](https://img.shields.io/travis/aureooms/js-poset/main.svg)](https://travis-ci.org/aureooms/js-poset/branches)
+[![Build](https://img.shields.io/travis/aureooms/js-poset/main.svg)](https://travis-ci.com/aureooms/js-poset/branches)
 [![Dependencies](https://img.shields.io/david/aureooms/js-poset.svg)](https://david-dm.org/aureooms/js-poset)
 [![Dev dependencies](https://img.shields.io/david/dev/aureooms/js-poset.svg)](https://david-dm.org/aureooms/js-poset?type=dev)
 [![GitHub issues](https://img.shields.io/github/issues/aureooms/js-poset.svg)](https://github.com/aureooms/js-poset/issues)
