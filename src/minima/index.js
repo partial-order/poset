@@ -1,4 +1,4 @@
-import clarkson from './clarkson';
+import clarkson from "./clarkson.js";
 
 export default clarkson;
 
