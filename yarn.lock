@@ -17,7 +17,7 @@
   resolved "https://registry.yarnpkg.com/@aureooms/js-insertion-sort/-/js-insertion-sort-0.0.1.tgz#136b7bec0e21d3e56315abf2fa3c368b8af5e787"
   integrity sha512-qcmT2wIIXGlUpHS2UF7xuccFI7gngUDsQnO5+Y0nIehjD92JKw+QpPqbAUdTZCPOUmvhAYMEu5jh6oqvs2miIQ==
 
-"@aureooms/js-pseudo-random@^2.0.0":
+"@aureooms/js-pseudo-random@2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@aureooms/js-pseudo-random/-/js-pseudo-random-2.0.0.tgz#84e396cdf7d2c5d05c54c2e05f0aa4f69e107d4c"
   integrity sha512-PdTQCoeo9npuLONdZme469xEbLyjWU5YjCl6DVa0NkiFDglx5Jka+Ojv6oNXkfdgjo/P/soqTDDK7ZKJDuo7dA==
