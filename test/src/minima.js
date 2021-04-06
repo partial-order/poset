@@ -4,8 +4,9 @@ import {minima} from '../../src/index.js';
 
 import {sort} from '@aureooms/js-insertion-sort';
 import {alloc, iota} from '@aureooms/js-array';
-import {shuffle} from '@aureooms/js-random';
 import {increasing} from '@aureooms/js-compare';
+
+import {entropy} from '../fixtures.js';
 
 const divides = (a, b) => b % a === 0;
 const norel = (_a, _b) => false;
@@ -13,6 +14,8 @@ const norel = (_a, _b) => false;
 test('minima 1', (t) => {
 	const a = [1, 2, 3, 4, 6, 12];
 
+	const seed = [0, 17];
+	const {shuffle} = entropy(seed);
 	shuffle(a, 0, a.length);
 
 	const min = minima(divides, a, 0, a.length);
@@ -29,6 +32,8 @@ test('minima 2,3', (t) => {
 
 	const j = a.length;
 
+	const seed = [0, 17];
+	const {shuffle} = entropy(seed);
 	shuffle(a, i, j);
 
 	const min = minima(divides, a, i, j);
@@ -48,6 +53,8 @@ test('minima totally unordered set', (t) => {
 
 	iota(a, 0, n, 0);
 
+	const seed = [0, 17];
+	const {shuffle} = entropy(seed);
 	shuffle(a, 0, n);
 
 	const min = minima(norel, a, 0, n);

@@ -7,20 +7,32 @@
   resolved "https://registry.yarnpkg.com/@aureooms/js-array/-/js-array-4.0.0.tgz#ea64b7c788644f40bbb92259a6098ac14a4eca6c"
   integrity sha1-6mS3x4hkT0C7uSJZpgmKwUpOymw=
 
-"@aureooms/js-compare@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@aureooms/js-compare/-/js-compare-2.0.0.tgz#38d25672e51f0eb0207ad1b7153ac6403122ca39"
-  integrity sha512-NwmQ+rKJfSKkqoGwUKoOvsjbTaI5WCQ8gyo/sv9IJrEd6Uovfw3YiUuZX66SU6g0kWpX12ZVvTyt8szOSOyiCA==
+"@aureooms/js-compare@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@aureooms/js-compare/-/js-compare-2.0.1.tgz#4636ea0736945abbcca38d5bd56a1f405034b2f9"
+  integrity sha512-J+gG1wlwF401ySv0mOYhIIVUuoukvZaRkIwYNH9xZTLhRyI4VxoaFi3k8GA0ebjHqndLGYJS9uEeG3cuQcg+7w==
 
 "@aureooms/js-insertion-sort@0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@aureooms/js-insertion-sort/-/js-insertion-sort-0.0.1.tgz#136b7bec0e21d3e56315abf2fa3c368b8af5e787"
   integrity sha512-qcmT2wIIXGlUpHS2UF7xuccFI7gngUDsQnO5+Y0nIehjD92JKw+QpPqbAUdTZCPOUmvhAYMEu5jh6oqvs2miIQ==
 
-"@aureooms/js-random@2.0.0":
+"@aureooms/js-pseudo-random@^2.0.0":
   version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@aureooms/js-random/-/js-random-2.0.0.tgz#f62c6954ed79bd9a520197125ee3cfbe14b00d72"
-  integrity sha1-9ixpVO15vZpSAZcSXuPPvhSwDXI=
+  resolved "https://registry.yarnpkg.com/@aureooms/js-pseudo-random/-/js-pseudo-random-2.0.0.tgz#84e396cdf7d2c5d05c54c2e05f0aa4f69e107d4c"
+  integrity sha512-PdTQCoeo9npuLONdZme469xEbLyjWU5YjCl6DVa0NkiFDglx5Jka+Ojv6oNXkfdgjo/P/soqTDDK7ZKJDuo7dA==
+  dependencies:
+    "@aureooms/js-uint64" "^3.0.1"
+
+"@aureooms/js-random@3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@aureooms/js-random/-/js-random-3.1.0.tgz#bd3f249a7ef5e78b75706b5e0cd8fd321bd17e6e"
+  integrity sha512-TvJk5C9mBDtz1yyrvQTB2ZeO5t4jJBDI9Y8PD8nwh81vxfCwd/mBmiWznTCR29HU7MesQ0jDyFECWpdBgU1yFA==
+
+"@aureooms/js-uint64@^3.0.1":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@aureooms/js-uint64/-/js-uint64-3.1.0.tgz#abd5eba5392dc0503415c383b1deb3d09b5711b6"
+  integrity sha512-q38EIajp2Iiv+lLJjgFH9LVe5GnWnmhQPUOScPN4fmWywRJJ11qb5i5j1NbtmgRcs6EpymOk6bSRc3Jbh0OENw==
 
 "@babel/code-frame@7.12.11":
   version "7.12.11"
