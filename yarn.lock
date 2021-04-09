@@ -24,10 +24,10 @@
   dependencies:
     "@aureooms/js-uint64" "^3.0.1"
 
-"@aureooms/js-random@3.3.0":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@aureooms/js-random/-/js-random-3.3.0.tgz#4fdeb5479238e8c17cb65027f36f206f836a1f31"
-  integrity sha512-hvJxnwsfESNjuZFUn8Pyz7vdiI4Ty0o55wtl4xPIPfiZ4oOsHHNhgoYy+6kV0cgwTcZzmxggtZiaPKhlK/e7rQ==
+"@aureooms/js-random@3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@aureooms/js-random/-/js-random-3.4.0.tgz#4d32ab8b0bd30ada20bd84fa65da861c22dfc214"
+  integrity sha512-beThd4HqYLjYOakD/+6nB1ZFaAiGrfzZIT0eOiHUfQe0omiLfRdfcsInZ8vYFgEKM/mN+5WkFPNyldOhRJ1ygA==
 
 "@aureooms/js-uint64@^3.0.1":
   version "3.1.0"
