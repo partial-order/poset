@@ -1,4 +1,4 @@
-:spider_web: [@aureooms/js-poset](https://aureooms.github.io/js-poset)
+:spider_web: [@aureooms/js-poset](https://make-github-pseudonymous-again.github.io/js-poset)
 ==
 
 <p align="center">
@@ -13,7 +13,7 @@ User:David_Eppstein
 </p>
 
 Partially ordered sets algorithms for JavaScript.
-See [docs](https://aureooms.github.io/js-poset).
+See [docs](https://make-github-pseudonymous-again.github.io/js-poset).
 Parent is [@aureooms/js-algorithms](https://github.com/aureooms/js-algorithms).
 
 ```js
@@ -42,5 +42,5 @@ minima(norel, a, 0, a.length); // a.length
 [![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-poset.svg)](https://codeclimate.com/github/aureooms/js-poset/trends/churn)
 [![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-poset/main.svg)](https://codecov.io/gh/aureooms/js-poset)
 [![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-poset.svg)](https://codeclimate.com/github/aureooms/js-poset/trends/technical_debt)
-[![Documentation](https://aureooms.github.io/js-poset/badge.svg)](https://aureooms.github.io/js-poset/source.html)
+[![Documentation](https://make-github-pseudonymous-again.github.io/js-poset/badge.svg)](https://make-github-pseudonymous-again.github.io/js-poset/source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-poset)](https://bundlephobia.com/result?p=@aureooms/js-poset)
