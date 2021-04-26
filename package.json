@@ -6,11 +6,11 @@
   "author": "aureooms",
   "homepage": "https://make-github-pseudonymous-again.github.io/js-poset",
   "repository": {
-    "url": "https://github.com/aureooms/js-poset",
+    "url": "https://github.com/make-github-pseudonymous-again/js-poset",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/aureooms/js-poset/issues"
+    "url": "https://github.com/make-github-pseudonymous-again/js-poset/issues"
   },
   "keywords": [
     "adt",
