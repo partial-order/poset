@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../">
-  <title data-ice="title">Manual | @aureooms/js-poset</title>
+  <title data-ice="title">Manual | @partial-order/poset</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
   <script src="script/manual.js"></script>
-<link rel="stylesheet" href="./inject/css/0-style.css"><script src="./inject/script/0-header.js"></script><meta name="description" content="Partially ordered sets algorithms for JavaScript."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@aureooms/js-poset"><meta property="twitter:description" content="Partially ordered sets algorithms for JavaScript."></head>
+<link rel="stylesheet" href="./inject/css/0-style.css"><script src="./inject/script/0-header.js"></script><meta name="description" content="Partially ordered sets algorithms for JavaScript."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@partial-order/poset"><meta property="twitter:description" content="Partially ordered sets algorithms for JavaScript."></head>
 <body class="layout-container manual-root manual-index" data-ice="rootContainer">
 
 <header>
@@ -24,7 +24,7 @@
   </span>
     <ul class="search-result"></ul>
   </div>
-<a style="position:relative; top:3px;" href="https://github.com/aureooms/js-poset"><img width="20px" src="./image/github.png"></a></header>
+<a style="position:relative; top:3px;" href="https://github.com/partial-order/poset"><img width="20px" src="./image/github.png"></a></header>
 
 <nav class="navigation" data-ice="nav"><div class="manual-toc-root">
   
@@ -76,9 +76,9 @@
         <div data-ice="card"><h1>Installation</h1><p>Can be managed using
 <a href="https://yarnpkg.com/en/docs">yarn</a>,
 <a href="https://docs.npmjs.com">npm</a>,
-or <a href="https://jspm.org/docs">jspm</a>.</p><h3>yarn</h3><pre><code class="lang-terminal"><code class="source-code prettyprint">yarn add @aureooms/js-poset</code>
-</code></pre><h3>npm</h3><pre><code class="lang-terminal"><code class="source-code prettyprint">npm install @aureooms/js-poset --save</code>
-</code></pre><h3>jspm</h3><pre><code class="lang-terminal"><code class="source-code prettyprint">jspm install npm:@aureooms/js-poset</code>
+or <a href="https://jspm.org/docs">jspm</a>.</p><h3>yarn</h3><pre><code class="lang-terminal"><code class="source-code prettyprint">yarn add @partial-order/poset</code>
+</code></pre><h3>npm</h3><pre><code class="lang-terminal"><code class="source-code prettyprint">npm install @partial-order/poset --save</code>
+</code></pre><h3>jspm</h3><pre><code class="lang-terminal"><code class="source-code prettyprint">jspm install npm:@partial-order/poset</code>
 </code></pre></div>
         <a data-ice="link" href="manual/installation.html"></a>
       </div>
@@ -88,12 +88,12 @@ or <a href="https://jspm.org/docs">jspm</a>.</p><h3>yarn</h3><pre><code class="l
         <div data-ice="card"><h1>Usage</h1><blockquote>
 <p>:warning: The code requires <code>regeneratorRuntime</code> to be defined, for instance by importing
 <a href="https://www.npmjs.com/package/regenerator-runtime">regenerator-runtime/runtime</a>.</p>
-</blockquote><p>First, require the polyfill at the entry point of your application</p><pre><code class="lang-js"><code class="source-code prettyprint">require( &apos;regenerator-runtime/runtime&apos; );
+</blockquote><p>First, require the polyfill at the entry point of your application</p><pre><code class="lang-js"><code class="source-code prettyprint">await import( &apos;regenerator-runtime/runtime.js&apos; );
 // or
 import &apos;regenerator-runtime/runtime.js&apos; ;</code>
-</code></pre><p>Then, import the library where needed</p><pre><code class="lang-js"><code class="source-code prettyprint">const poset = require( &apos;@aureooms/js-poset&apos; ) ;
+</code></pre><p>Then, import the library where needed</p><pre><code class="lang-js"><code class="source-code prettyprint">const poset = await import( &apos;@partial-order/poset&apos; ) ;
 // or
-import * as poset from &apos;@aureooms/js-poset&apos; ;</code>
+import * as poset from &apos;@partial-order/poset&apos; ;</code>
 </code></pre></div>
         <a data-ice="link" href="manual/usage.html"></a>
       </div>
@@ -101,7 +101,7 @@ import * as poset from &apos;@aureooms/js-poset&apos; ;</code>
 <div class="manual-card-wrap" data-ice="cards">
       <div class="manual-card">
         <div data-ice="card"><h1>Examples</h1><blockquote>
-<p>More examples in <a href="https://github.com/aureooms/js-poset/tree/main/test/src">the test files</a>.</p>
+<p>More examples in <a href="https://github.com/partial-order/poset/tree/main/test/src">the test files</a>.</p>
 </blockquote></div>
         <a data-ice="link" href="manual/example.html"></a>
       </div>

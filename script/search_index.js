@@ -1,14 +1,14 @@
 window.esdocSearchIndex = [
   [
-    "@aureooms/js-poset/src/minima/clarkson.js~clarkson",
+    "@partial-order/poset/src/minima/clarkson.js~clarkson",
     "function/index.html#static-function-clarkson",
-    "<span>clarkson</span> <span class=\"search-result-import-path\">@aureooms/js-poset/src/minima/clarkson.js</span>",
+    "<span>clarkson</span> <span class=\"search-result-import-path\">@partial-order/poset/src/minima/clarkson.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-poset/src/minima/minima.js~minima",
+    "@partial-order/poset/src/minima/minima.js~minima",
     "variable/index.html#static-variable-minima",
-    "<span>minima</span> <span class=\"search-result-import-path\">@aureooms/js-poset/src/minima/minima.js</span>",
+    "<span>minima</span> <span class=\"search-result-import-path\">@partial-order/poset/src/minima/minima.js</span>",
     "variable"
   ],
   [
