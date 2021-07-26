@@ -1,7 +1,7 @@
 {
   "name": "@partial-order/poset",
   "description": "Partially ordered sets algorithms for JavaScript.",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "license": "AGPL-3.0",
   "author": "make-github-pseudonymous-again",
   "homepage": "https://partial-order.github.io/poset",
