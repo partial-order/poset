@@ -1,16 +1,16 @@
 {
-  "name": "@aureooms/js-poset",
+  "name": "@partial-order/poset",
   "description": "Partially ordered sets algorithms for JavaScript.",
   "version": "5.0.0",
   "license": "AGPL-3.0",
-  "author": "aureooms",
-  "homepage": "https://make-github-pseudonymous-again.github.io/js-poset",
+  "author": "make-github-pseudonymous-again",
+  "homepage": "https://partial-order.github.io/poset",
   "repository": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-poset",
+    "url": "https://github.com/partial-order/poset",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-poset/issues"
+    "url": "https://github.com/partial-order/poset/issues"
   },
   "keywords": [
     "adt",
@@ -63,16 +63,16 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@aureooms/js-array": "4.0.0",
-    "@aureooms/js-compare": "2.0.1",
-    "@aureooms/js-insertion-sort": "0.0.1",
-    "@aureooms/js-pseudo-random": "2.0.0",
-    "@aureooms/js-random": "3.4.0",
     "@babel/core": "7.14.8",
     "@babel/preset-env": "7.14.8",
     "@babel/register": "7.14.5",
     "@commitlint/cli": "13.1.0",
+    "@comparison-sorting/insertion-sort": "^2.0.0",
+    "@entropy-source/pseudo-random": "^4.0.0",
+    "@iterable-iterator/range": "^2.0.1",
     "@js-library/commitlint-config": "0.0.4",
+    "@randomized/random": "^4.0.0",
+    "@total-order/primitive": "^1.0.1",
     "ava": "3.15.0",
     "babel-plugin-transform-remove-console": "6.9.4",
     "babel-plugin-unassert": "3.1.0",

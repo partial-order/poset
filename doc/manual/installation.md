@@ -8,15 +8,15 @@ or [jspm](https://jspm.org/docs).
 
 ### yarn
 ```terminal
-yarn add @aureooms/js-poset
+yarn add @partial-order/poset
 ```
 
 ### npm
 ```terminal
-npm install @aureooms/js-poset --save
+npm install @partial-order/poset --save
 ```
 
 ### jspm
 ```terminal
-jspm install npm:@aureooms/js-poset
+jspm install npm:@partial-order/poset
 ```

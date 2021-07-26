@@ -2,9 +2,9 @@ import test from 'ava';
 
 import {minima} from '../../src/index.js';
 
-import {sort} from '@aureooms/js-insertion-sort';
-import {alloc, iota} from '@aureooms/js-array';
-import {increasing} from '@aureooms/js-compare';
+import {sort} from '@comparison-sorting/insertion-sort';
+import {range} from '@iterable-iterator/range';
+import {increasing} from '@total-order/primitive';
 
 import {entropy} from '../fixtures.js';
 
@@ -49,9 +49,7 @@ test('minima 2,3', (t) => {
 test('minima totally unordered set', (t) => {
 	const n = 1000;
 
-	const a = alloc(n);
-
-	iota(a, 0, n, 0);
+	const a = Array.from(range(n));
 
 	const seed = [0, 17];
 	const {shuffle} = entropy(seed);

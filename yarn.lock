@@ -2,37 +2,10 @@
 # yarn lockfile v1
 
 
-"@aureooms/js-array@4.0.0":
+"@arithmetic-type/uint64@^4.0.0":
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@aureooms/js-array/-/js-array-4.0.0.tgz#ea64b7c788644f40bbb92259a6098ac14a4eca6c"
-  integrity sha1-6mS3x4hkT0C7uSJZpgmKwUpOymw=
-
-"@aureooms/js-compare@2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@aureooms/js-compare/-/js-compare-2.0.1.tgz#4636ea0736945abbcca38d5bd56a1f405034b2f9"
-  integrity sha512-J+gG1wlwF401ySv0mOYhIIVUuoukvZaRkIwYNH9xZTLhRyI4VxoaFi3k8GA0ebjHqndLGYJS9uEeG3cuQcg+7w==
-
-"@aureooms/js-insertion-sort@0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@aureooms/js-insertion-sort/-/js-insertion-sort-0.0.1.tgz#136b7bec0e21d3e56315abf2fa3c368b8af5e787"
-  integrity sha512-qcmT2wIIXGlUpHS2UF7xuccFI7gngUDsQnO5+Y0nIehjD92JKw+QpPqbAUdTZCPOUmvhAYMEu5jh6oqvs2miIQ==
-
-"@aureooms/js-pseudo-random@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@aureooms/js-pseudo-random/-/js-pseudo-random-2.0.0.tgz#84e396cdf7d2c5d05c54c2e05f0aa4f69e107d4c"
-  integrity sha512-PdTQCoeo9npuLONdZme469xEbLyjWU5YjCl6DVa0NkiFDglx5Jka+Ojv6oNXkfdgjo/P/soqTDDK7ZKJDuo7dA==
-  dependencies:
-    "@aureooms/js-uint64" "^3.0.1"
-
-"@aureooms/js-random@3.4.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@aureooms/js-random/-/js-random-3.4.0.tgz#4d32ab8b0bd30ada20bd84fa65da861c22dfc214"
-  integrity sha512-beThd4HqYLjYOakD/+6nB1ZFaAiGrfzZIT0eOiHUfQe0omiLfRdfcsInZ8vYFgEKM/mN+5WkFPNyldOhRJ1ygA==
-
-"@aureooms/js-uint64@^3.0.1":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@aureooms/js-uint64/-/js-uint64-3.1.0.tgz#abd5eba5392dc0503415c383b1deb3d09b5711b6"
-  integrity sha512-q38EIajp2Iiv+lLJjgFH9LVe5GnWnmhQPUOScPN4fmWywRJJ11qb5i5j1NbtmgRcs6EpymOk6bSRc3Jbh0OENw==
+  resolved "https://registry.yarnpkg.com/@arithmetic-type/uint64/-/uint64-4.0.0.tgz#c76b82919f9d309eaff38d5cf875ac1a7ca497b6"
+  integrity sha512-oMpwI5Ka8dsmRqG9EMdKct1737DeMzd7B8F9d5cuE/PrMXy10y1hvls/JmogN/1H+S0ZTJ+2ObU2EqjCvw7FeA==
 
 "@babel/code-frame@7.12.11":
   version "7.12.11"
@@ -1961,12 +1934,24 @@
   dependencies:
     chalk "^4.0.0"
 
+"@comparison-sorting/insertion-sort@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@comparison-sorting/insertion-sort/-/insertion-sort-2.0.0.tgz#594510a9f6860194186c779b008b27ed6211c4df"
+  integrity sha512-BKdAJq5U+mRIy/GJc4rE9jvZhE7z8GUBrvwkTFHzkYunnW5SOlAIuuGTT1Rc+Iuje/OkIj4A53rLvCYbzEuuLg==
+
 "@concordance/react@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@concordance/react/-/react-2.0.0.tgz#aef913f27474c53731f4fd79cc2f54897de90fde"
   integrity sha512-huLSkUuM2/P+U0uy2WwlKuixMsTODD8p4JVQBI4VKeopkiN0C7M3N9XYVawb4M+4spN5RrO/eLhk7KoQX6nsfA==
   dependencies:
     arrify "^1.0.1"
+
+"@entropy-source/pseudo-random@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@entropy-source/pseudo-random/-/pseudo-random-4.0.0.tgz#a91d57e356e0c11ead53abaf4a9e91246ef5f109"
+  integrity sha512-1tvVXXYVMMSUGPo/qp9UGsw0Fqo5JqxZ2PnVwoDSwfqUS0zPWt1KLO3zReL+9W4P/XTLtGMDyDSXSLZ13LU1wA==
+  dependencies:
+    "@arithmetic-type/uint64" "^4.0.0"
 
 "@eslint/eslintrc@^0.4.0":
   version "0.4.0"
@@ -1987,6 +1972,11 @@
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.3.tgz#e45e384e4b8ec16bce2fd903af78450f6bf7ec98"
   integrity sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==
+
+"@iterable-iterator/range@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@iterable-iterator/range/-/range-2.0.1.tgz#3d566aa26e3df496f2ba18a2f67de4c65518e81c"
+  integrity sha512-JPkPH/u4AQxWyqXDOqHk4DZeQJANv67cXuiE0DLC0FTaRgExQASlbhPZJo+JVxZRXW2EOBXSzdKdJQe5w9XghA==
 
 "@js-library/commitlint-config@0.0.4":
   version "0.0.4"
@@ -2026,6 +2016,11 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
+
+"@randomized/random@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@randomized/random/-/random-4.0.0.tgz#3664429ea3fd97a1bf321897d03e4681fd7b00c7"
+  integrity sha512-4dG15onq/4tXLMTrG12hRrlL3/hJ8yJbWc4YD3db45z5P5UtRqSQRqaW518YkXhXaIsLX1pA78FJBDl8jg85sw==
 
 "@rollup/plugin-alias@^3.1.1":
   version "3.1.2"
@@ -2118,6 +2113,11 @@
   integrity sha512-PyRA9sm1Yayuj5OIoJ1hGt2YISX45w9WcFbh6ddT0Z/0yaFxOtGLInr4jUfU1EAFVs0Yfyfev4RNwBlUaHdlDQ==
   dependencies:
     defer-to-connect "^2.0.0"
+
+"@total-order/primitive@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@total-order/primitive/-/primitive-1.0.1.tgz#7e409d303a2a3b24ed2af30bd9068027d6a4a326"
+  integrity sha512-BXCXyXoQIpdwFkplPRTuxFB0I1GHHia4t22bLAEqjdk48DFwQMwSbHq1EdLA81X/eFC/b6RdVxG4Q+WEcfs0aA==
 
 "@types/cacheable-request@^6.0.1":
   version "6.0.1"

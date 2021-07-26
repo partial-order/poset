@@ -1,5 +1,5 @@
-import {_fisheryates, _shuffle, _randint} from '@aureooms/js-random';
-import {splitmix64, nextFloat64} from '@aureooms/js-pseudo-random';
+import {_fisheryates, _shuffle, _randint} from '@randomized/random';
+import {splitmix64, nextFloat64} from '@entropy-source/pseudo-random';
 
 export const entropy = (seed) => {
 	const prng = splitmix64(seed);
