@@ -70,7 +70,7 @@
     "@commitlint/cli": "13.1.0",
     "@comparison-sorting/insertion-sort": "2.0.0",
     "@entropy-source/pseudo-random": "4.0.0",
-    "@iterable-iterator/range": "2.0.1",
+    "@iterable-iterator/range": "2.1.0",
     "@js-library/commitlint-config": "0.0.4",
     "@randomized/random": "4.0.0",
     "@total-order/primitive": "1.0.1",
