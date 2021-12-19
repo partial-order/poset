@@ -33,8 +33,7 @@ minima(norel, a, 0, a.length); // a.length
 [![License](https://img.shields.io/github/license/partial-order/poset.svg)](https://raw.githubusercontent.com/partial-order/poset/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@partial-order/poset.svg)](https://www.npmjs.org/package/@partial-order/poset)
 [![Tests](https://img.shields.io/github/workflow/status/partial-order/poset/ci:test?event=push&label=tests)](https://github.com/partial-order/poset/actions/workflows/ci:test.yml?query=branch:main)
-[![Dependencies](https://img.shields.io/david/partial-order/poset.svg)](https://david-dm.org/partial-order/poset)
-[![Dev dependencies](https://img.shields.io/david/dev/partial-order/poset.svg)](https://david-dm.org/partial-order/poset?type=dev)
+[![Dependencies](https://img.shields.io/librariesio/github/partial-order/poset.svg)](https://github.com/partial-order/poset/network/dependencies)
 [![GitHub issues](https://img.shields.io/github/issues/partial-order/poset.svg)](https://github.com/partial-order/poset/issues)
 [![Downloads](https://img.shields.io/npm/dm/@partial-order/poset.svg)](https://www.npmjs.org/package/@partial-order/poset)
 
