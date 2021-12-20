@@ -1,12 +1,12 @@
 import test from 'ava';
 
-import {minima} from '../../src/index.js';
-
 import {sort} from '@comparison-sorting/insertion-sort';
 import {range} from '@iterable-iterator/range';
 import {increasing} from '@total-order/primitive';
 
 import {entropy} from '../fixtures.js';
+
+import {minima} from '../../src/index.js';
 
 const divides = (a, b) => b % a === 0;
 const norel = (_a, _b) => false;
