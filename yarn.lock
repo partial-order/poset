@@ -1248,10 +1248,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@randomized/random@4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@randomized/random/-/random-4.0.0.tgz#3664429ea3fd97a1bf321897d03e4681fd7b00c7"
-  integrity sha512-4dG15onq/4tXLMTrG12hRrlL3/hJ8yJbWc4YD3db45z5P5UtRqSQRqaW518YkXhXaIsLX1pA78FJBDl8jg85sw==
+"@randomized/random@4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@randomized/random/-/random-4.1.0.tgz#ebefffe81fbeed5e8bc44b5869078d5ab1c0afb4"
+  integrity sha512-MRnxsBvXpmxbfAujUIglwLJCcU8N3ee+j9VIr9p20kYtLWUPgCTsE5D06ARgbn8JXrNbjtUtqw40eCIj8nFhGw==
 
 "@rollup/plugin-alias@^3.1.1":
   version "3.1.8"
