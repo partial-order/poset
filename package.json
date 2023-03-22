@@ -68,7 +68,7 @@
     "@babel/core": "7.21.3",
     "@babel/preset-env": "7.20.2",
     "@babel/register": "7.21.0",
-    "@commitlint/cli": "17.4.4",
+    "@commitlint/cli": "17.5.0",
     "@comparison-sorting/insertion-sort": "2.1.0",
     "@entropy-source/pseudo-random": "4.0.0",
     "@iterable-iterator/range": "2.1.0",
