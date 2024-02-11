@@ -212,7 +212,8 @@
       }
     ],
     "rules": {
-      "unicorn/prefer-node-protocol": "off"
+      "unicorn/prefer-node-protocol": "off",
+      "unicorn/prevent-abbreviations": "off"
     }
   }
 }
