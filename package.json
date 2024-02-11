@@ -79,7 +79,7 @@
     "@entropy-source/pseudo-random": "4.0.0",
     "@iterable-iterator/range": "2.1.0",
     "@js-library/commitlint-config": "0.0.4",
-    "@node-loader/babel": "2.0.1",
+    "@node-loader/babel": "2.1.0",
     "@node-loader/core": "2.0.0",
     "@node-loader/import-maps": "1.1.0",
     "@randomized/random": "4.1.0",
