@@ -72,8 +72,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@babel/core": "7.24.0",
-    "@babel/preset-env": "7.24.0",
+    "@babel/core": "7.24.3",
+    "@babel/preset-env": "7.24.3",
     "@commitlint/cli": "19.2.1",
     "@comparison-sorting/insertion-sort": "2.1.0",
     "@entropy-source/pseudo-random": "4.0.0",
