@@ -73,7 +73,7 @@
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "7.27.1",
-    "@babel/preset-env": "7.27.1",
+    "@babel/preset-env": "7.27.2",
     "@commitlint/cli": "19.8.0",
     "@comparison-sorting/insertion-sort": "2.1.0",
     "@entropy-source/pseudo-random": "4.0.0",
